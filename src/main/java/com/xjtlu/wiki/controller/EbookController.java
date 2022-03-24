@@ -1,6 +1,9 @@
 package com.xjtlu.wiki.controller;
 
 import com.xjtlu.wiki.entity.Ebook;
+import com.xjtlu.wiki.request.EbookReq;
+import com.xjtlu.wiki.resp.CommonResp;
+import com.xjtlu.wiki.resp.EbookResp;
 import com.xjtlu.wiki.service.EbookService;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -15,9 +18,11 @@ public class EbookController {
     private EbookService ebookService;
 
     @RequestMapping("/list")
-    public List<Ebook> list(){
-
-    return ebookService.list();
+    public CommonResp list(EbookReq req){
+        CommonResp< List<EbookResp>> resp = new CommonResp<>();
+        List<EbookResp> list = ebookService.list(req);
+        resp.setContent(list);
+        return resp;
 
     }
 }
