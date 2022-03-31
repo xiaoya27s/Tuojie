@@ -2,19 +2,19 @@
   <a-layout>
     <the-header></the-header>
     <router-view/>
-    <a-layout-footer style="text-align: center">
-      Knowledge Design for Cpt202 ©2022 Created by Group B21
-    </a-layout-footer>
+    <the-footer></the-footer>
   </a-layout>
 </template>
 
 <script lang="ts">
 import { defineComponent } from 'vue';
 import TheHeader from '@/components/the-header.vue';
+import TheFooter from '@/components/the-footer.vue';
 
 export default defineComponent({
   name: 'app',
   components:{
+    TheFooter,
     TheHeader,
 
   }
