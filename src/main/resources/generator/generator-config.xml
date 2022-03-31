@@ -27,7 +27,7 @@
                         password="root">
         </jdbcConnection>
 
-        <!-- domain类的位置 -->
+        <!-- Entity类的位置 -->
         <javaModelGenerator targetProject="src\main\java"
                             targetPackage="com.xjtlu.wiki.entity"/>
 
@@ -42,6 +42,9 @@
 
         <table tableName="demo" domainObjectName="Demo"/>
         <table tableName="ebook"/>
+        <table tableName="test2"/>
+        <table tableName="test4"/>
+
         <!--<table tableName="category"/>-->
         <!--<table tableName="doc"/>-->
         <!--<table tableName="content"/>-->
