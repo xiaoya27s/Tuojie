@@ -16,7 +16,6 @@ export default defineComponent({
   components:{
     TheFooter,
     TheHeader,
-
   }
 });
 </script>
