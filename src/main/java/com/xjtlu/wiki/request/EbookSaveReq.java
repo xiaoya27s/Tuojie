@@ -1,6 +1,6 @@
-package com.xjtlu.wiki.resp;
+package com.xjtlu.wiki.request;
 
-public class EbookResp {
+public class EbookSaveReq {
     private Long id;
 
     private String name;
