@@ -40,15 +40,17 @@
                              targetPackage="com.xjtlu.wiki.mapper"
                              type="XMLMAPPER"/>
 
-        <table tableName="demo" domainObjectName="Demo"/>
-        <table tableName="ebook"/>
-        <table tableName="test2"/>
-        <table tableName="test4"/>
+<!--        <table tableName="demo" domainObjectName="Demo"/>-->
+<!--        <table tableName="ebook"/>-->
+<!--        <table tableName="test2"/>-->
+<!--        <table tableName="test4"/>-->
 
-        <!--<table tableName="category"/>-->
-        <!--<table tableName="doc"/>-->
-        <!--<table tableName="content"/>-->
-        <!--<table tableName="user"/>-->
-        <table tableName="ebook_snapshot"/>
+<!--        &lt;!&ndash;<table tableName="category"/>&ndash;&gt;-->
+<!--        &lt;!&ndash;<table tableName="doc"/>&ndash;&gt;-->
+<!--        &lt;!&ndash;<table tableName="content"/>&ndash;&gt;-->
+<!--        &lt;!&ndash;<table tableName="user"/>&ndash;&gt;-->
+<!--        <table tableName="ebook_snapshot"/>-->
+
+        <table tableName="category"/>
     </context>
 </generatorConfiguration>

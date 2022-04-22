@@ -1,878 +1,272 @@
-2022-04-01 01:48:07.072 INFO  com.xjtlu.wiki.WikiApplication                    :55   [32m                  [0;39m Starting WikiApplication using Java 1.8.0_101 on WIN-1J0EG9O62MI with PID 6360 (C:\Users\Administrator.000\Desktop\wiki\target\classes started by Administrator in C:\Users\Administrator.000\Desktop\wiki)
-2022-04-01 01:48:07.076 INFO  com.xjtlu.wiki.WikiApplication                    :640  [32m                  [0;39m No active profile set, falling back to 1 default profile: "default"
-2022-04-01 01:48:07.118 INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor :255  [32m                  [0;39m Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2022-04-01 01:48:07.118 INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor :255  [32m                  [0;39m For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2022-04-01 01:48:08.134 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m                  [0;39m Tomcat initialized with port(s): 8888 (http)
-2022-04-01 01:48:08.144 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8888"]
-2022-04-01 01:48:08.144 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
-2022-04-01 01:48:08.144 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/9.0.58]
-2022-04-01 01:48:08.216 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
-2022-04-01 01:48:08.216 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :290  [32m                  [0;39m Root WebApplicationContext: initialization completed in 1097 ms
-2022-04-01 01:48:08.826 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :58   [32m                  [0;39m LiveReload server is running on port 35729
-2022-04-01 01:48:08.837 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8888"]
-2022-04-01 01:48:08.850 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220  [32m                  [0;39m Tomcat started on port(s): 8888 (http) with context path ''
-2022-04-01 01:48:08.858 INFO  com.xjtlu.wiki.WikiApplication                    :61   [32m                  [0;39m Started WikiApplication in 2.473 seconds (JVM running for 3.754)
-2022-04-01 01:48:08.860 INFO  com.xjtlu.wiki.WikiApplication                    :18   [32m                  [0;39m 启动成功！！
-2022-04-01 01:48:08.861 INFO  com.xjtlu.wiki.WikiApplication                    :19   [32m                  [0;39m 地址: 	http://127.0.0.1:8888
-2022-04-01 01:48:14.347 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring DispatcherServlet 'dispatcherServlet'
-2022-04-01 01:48:14.347 INFO  org.springframework.web.servlet.DispatcherServlet :525  [32m                  [0;39m Initializing Servlet 'dispatcherServlet'
-2022-04-01 01:48:14.348 INFO  org.springframework.web.servlet.DispatcherServlet :547  [32m                  [0;39m Completed initialization in 1 ms
-2022-04-01 01:48:14.415 INFO  com.zaxxer.hikari.HikariDataSource                :110  [32m                  [0;39m HikariPool-1 - Starting...
-2022-04-01 01:48:14.787 INFO  com.zaxxer.hikari.HikariDataSource                :123  [32m                  [0;39m HikariPool-1 - Start completed.
-2022-04-01 02:05:50.375 INFO  com.zaxxer.hikari.HikariDataSource                :350  [32m                  [0;39m HikariPool-1 - Shutdown initiated...
-2022-04-01 02:05:50.386 INFO  com.zaxxer.hikari.HikariDataSource                :352  [32m                  [0;39m HikariPool-1 - Shutdown completed.
-2022-04-01 02:05:50.509 INFO  com.xjtlu.wiki.WikiApplication                    :55   [32m                  [0;39m Starting WikiApplication using Java 1.8.0_101 on WIN-1J0EG9O62MI with PID 6360 (C:\Users\Administrator.000\Desktop\wiki\target\classes started by Administrator in C:\Users\Administrator.000\Desktop\wiki)
-2022-04-01 02:05:50.509 INFO  com.xjtlu.wiki.WikiApplication                    :640  [32m                  [0;39m No active profile set, falling back to 1 default profile: "default"
-2022-04-01 02:05:50.748 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m                  [0;39m Tomcat initialized with port(s): 8888 (http)
-2022-04-01 02:05:50.749 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8888"]
-2022-04-01 02:05:50.749 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
-2022-04-01 02:05:50.749 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/9.0.58]
-2022-04-01 02:05:50.766 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
-2022-04-01 02:05:50.767 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :290  [32m                  [0;39m Root WebApplicationContext: initialization completed in 256 ms
-2022-04-01 02:05:50.880 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :58   [32m                  [0;39m LiveReload server is running on port 35729
-2022-04-01 02:05:50.885 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8888"]
-2022-04-01 02:05:50.887 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220  [32m                  [0;39m Tomcat started on port(s): 8888 (http) with context path ''
-2022-04-01 02:05:50.890 INFO  com.xjtlu.wiki.WikiApplication                    :61   [32m                  [0;39m Started WikiApplication in 0.418 seconds (JVM running for 1067.883)
-2022-04-01 02:05:50.891 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener :63   [32m                  [0;39m Condition evaluation unchanged
-2022-04-01 02:05:50.892 INFO  com.xjtlu.wiki.WikiApplication                    :18   [32m                  [0;39m 启动成功！！
-2022-04-01 02:05:50.892 INFO  com.xjtlu.wiki.WikiApplication                    :19   [32m                  [0;39m 地址: 	http://127.0.0.1:8888
-2022-04-01 02:06:17.181 INFO  com.xjtlu.wiki.WikiApplication                    :55   [32m                  [0;39m Starting WikiApplication using Java 1.8.0_101 on WIN-1J0EG9O62MI with PID 852 (C:\Users\Administrator.000\Desktop\wiki\target\classes started by Administrator in C:\Users\Administrator.000\Desktop\wiki)
-2022-04-01 02:06:17.182 INFO  com.xjtlu.wiki.WikiApplication                    :640  [32m                  [0;39m No active profile set, falling back to 1 default profile: "default"
-2022-04-01 02:06:17.218 INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor :255  [32m                  [0;39m Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2022-04-01 02:06:17.218 INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor :255  [32m                  [0;39m For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2022-04-01 02:06:18.096 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m                  [0;39m Tomcat initialized with port(s): 8888 (http)
-2022-04-01 02:06:18.104 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8888"]
-2022-04-01 02:06:18.105 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
-2022-04-01 02:06:18.105 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/9.0.58]
-2022-04-01 02:06:18.176 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
-2022-04-01 02:06:18.176 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :290  [32m                  [0;39m Root WebApplicationContext: initialization completed in 958 ms
-2022-04-01 02:06:18.701 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :58   [32m                  [0;39m LiveReload server is running on port 35729
-2022-04-01 02:06:18.712 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8888"]
-2022-04-01 02:06:18.724 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220  [32m                  [0;39m Tomcat started on port(s): 8888 (http) with context path ''
-2022-04-01 02:06:18.732 INFO  com.xjtlu.wiki.WikiApplication                    :61   [32m                  [0;39m Started WikiApplication in 1.928 seconds (JVM running for 2.768)
-2022-04-01 02:06:18.734 INFO  com.xjtlu.wiki.WikiApplication                    :18   [32m                  [0;39m 启动成功！！
-2022-04-01 02:06:18.735 INFO  com.xjtlu.wiki.WikiApplication                    :19   [32m                  [0;39m 地址: 	http://127.0.0.1:8888
-2022-04-01 02:07:37.019 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring DispatcherServlet 'dispatcherServlet'
-2022-04-01 02:07:37.020 INFO  org.springframework.web.servlet.DispatcherServlet :525  [32m                  [0;39m Initializing Servlet 'dispatcherServlet'
-2022-04-01 02:07:37.021 INFO  org.springframework.web.servlet.DispatcherServlet :547  [32m                  [0;39m Completed initialization in 1 ms
-2022-04-01 02:07:37.095 INFO  com.zaxxer.hikari.HikariDataSource                :110  [32m                  [0;39m HikariPool-1 - Starting...
-2022-04-01 02:07:37.313 INFO  com.zaxxer.hikari.HikariDataSource                :123  [32m                  [0;39m HikariPool-1 - Start completed.
-2022-04-01 11:22:21.198 INFO  com.xjtlu.wiki.WikiApplication                    :55   [32m                  [0;39m Starting WikiApplication using Java 1.8.0_101 on WIN-1J0EG9O62MI with PID 5784 (C:\Users\Administrator.000\Desktop\wiki\target\classes started by Administrator in C:\Users\Administrator.000\Desktop\wiki)
-2022-04-01 11:22:21.200 INFO  com.xjtlu.wiki.WikiApplication                    :640  [32m                  [0;39m No active profile set, falling back to 1 default profile: "default"
-2022-04-01 11:22:21.244 INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor :255  [32m                  [0;39m Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2022-04-01 11:22:21.244 INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor :255  [32m                  [0;39m For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2022-04-01 11:22:22.279 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m                  [0;39m Tomcat initialized with port(s): 8888 (http)
-2022-04-01 11:22:22.288 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8888"]
-2022-04-01 11:22:22.289 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
-2022-04-01 11:22:22.289 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/9.0.58]
-2022-04-01 11:22:22.381 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
-2022-04-01 11:22:22.382 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :290  [32m                  [0;39m Root WebApplicationContext: initialization completed in 1136 ms
-2022-04-01 11:22:23.039 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :58   [32m                  [0;39m LiveReload server is running on port 35729
-2022-04-01 11:22:23.051 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8888"]
-2022-04-01 11:22:23.063 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220  [32m                  [0;39m Tomcat started on port(s): 8888 (http) with context path ''
-2022-04-01 11:22:23.073 INFO  com.xjtlu.wiki.WikiApplication                    :61   [32m                  [0;39m Started WikiApplication in 2.431 seconds (JVM running for 3.832)
-2022-04-01 11:22:23.076 INFO  com.xjtlu.wiki.WikiApplication                    :18   [32m                  [0;39m 启动成功！！
-2022-04-01 11:22:23.076 INFO  com.xjtlu.wiki.WikiApplication                    :19   [32m                  [0;39m 地址: 	http://127.0.0.1:8888
-2022-04-01 11:22:25.323 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring DispatcherServlet 'dispatcherServlet'
-2022-04-01 11:22:25.323 INFO  org.springframework.web.servlet.DispatcherServlet :525  [32m                  [0;39m Initializing Servlet 'dispatcherServlet'
-2022-04-01 11:22:25.324 INFO  org.springframework.web.servlet.DispatcherServlet :547  [32m                  [0;39m Completed initialization in 0 ms
-2022-04-01 11:22:25.397 INFO  com.zaxxer.hikari.HikariDataSource                :110  [32m                  [0;39m HikariPool-1 - Starting...
-2022-04-01 11:22:25.782 INFO  com.zaxxer.hikari.HikariDataSource                :123  [32m                  [0;39m HikariPool-1 - Start completed.
-2022-04-01 11:40:22.884 INFO  com.xjtlu.wiki.WikiApplication                    :55   [32m                  [0;39m Starting WikiApplication using Java 1.8.0_101 on WIN-1J0EG9O62MI with PID 12720 (C:\Users\Administrator.000\Desktop\wiki\target\classes started by Administrator in C:\Users\Administrator.000\Desktop\wiki)
-2022-04-01 11:40:22.886 INFO  com.xjtlu.wiki.WikiApplication                    :640  [32m                  [0;39m No active profile set, falling back to 1 default profile: "default"
-2022-04-01 11:40:22.928 INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor :255  [32m                  [0;39m Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2022-04-01 11:40:22.929 INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor :255  [32m                  [0;39m For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2022-04-01 11:40:23.927 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m                  [0;39m Tomcat initialized with port(s): 8888 (http)
-2022-04-01 11:40:23.934 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8888"]
-2022-04-01 11:40:23.935 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
-2022-04-01 11:40:23.935 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/9.0.58]
-2022-04-01 11:40:24.027 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
-2022-04-01 11:40:24.027 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :290  [32m                  [0;39m Root WebApplicationContext: initialization completed in 1098 ms
-2022-04-01 11:40:24.586 WARN  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :61   [32m                  [0;39m Unable to start LiveReload server
-2022-04-01 11:40:24.597 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8888"]
-2022-04-01 11:40:24.601 WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext:591  [32m                  [0;39m Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'; nested exception is org.springframework.boot.web.server.PortInUseException: Port 8888 is already in use
-2022-04-01 11:40:24.604 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Pausing ProtocolHandler ["http-nio-8888"]
-2022-04-01 11:40:24.605 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Stopping service [Tomcat]
-2022-04-01 11:40:24.608 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Stopping ProtocolHandler ["http-nio-8888"]
-2022-04-01 11:40:24.608 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Destroying ProtocolHandler ["http-nio-8888"]
-2022-04-01 11:40:24.613 INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener:136  [32m                  [0;39m 
-
-Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
-2022-04-01 11:40:24.632 ERROR o.s.b.diagnostics.LoggingFailureAnalysisReporter  :40   [32m                  [0;39m 
-
-***************************
-APPLICATION FAILED TO START
-***************************
-
-Description:
-
-Web server failed to start. Port 8888 was already in use.
-
-Action:
-
-Identify and stop the process that's listening on port 8888 or configure this application to listen on another port.
-
-2022-04-01 11:49:33.790 INFO  com.zaxxer.hikari.HikariDataSource                :350  [32m                  [0;39m HikariPool-1 - Shutdown initiated...
-2022-04-01 11:49:33.797 INFO  com.zaxxer.hikari.HikariDataSource                :352  [32m                  [0;39m HikariPool-1 - Shutdown completed.
-2022-04-01 11:49:33.952 INFO  com.xjtlu.wiki.WikiApplication                    :55   [32m                  [0;39m Starting WikiApplication using Java 1.8.0_101 on WIN-1J0EG9O62MI with PID 5784 (C:\Users\Administrator.000\Desktop\wiki\target\classes started by Administrator in C:\Users\Administrator.000\Desktop\wiki)
-2022-04-01 11:49:33.953 INFO  com.xjtlu.wiki.WikiApplication                    :640  [32m                  [0;39m No active profile set, falling back to 1 default profile: "default"
-2022-04-01 11:49:34.226 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m                  [0;39m Tomcat initialized with port(s): 8888 (http)
-2022-04-01 11:49:34.227 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8888"]
-2022-04-01 11:49:34.227 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
-2022-04-01 11:49:34.227 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/9.0.58]
-2022-04-01 11:49:34.244 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
-2022-04-01 11:49:34.245 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :290  [32m                  [0;39m Root WebApplicationContext: initialization completed in 288 ms
-2022-04-01 11:49:34.370 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :58   [32m                  [0;39m LiveReload server is running on port 35729
-2022-04-01 11:49:34.378 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8888"]
-2022-04-01 11:49:34.379 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220  [32m                  [0;39m Tomcat started on port(s): 8888 (http) with context path ''
-2022-04-01 11:49:34.390 INFO  com.xjtlu.wiki.WikiApplication                    :61   [32m                  [0;39m Started WikiApplication in 0.48 seconds (JVM running for 1635.149)
-2022-04-01 11:49:34.393 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener :63   [32m                  [0;39m Condition evaluation unchanged
-2022-04-01 11:49:34.394 INFO  com.xjtlu.wiki.WikiApplication                    :18   [32m                  [0;39m 启动成功！！
-2022-04-01 11:49:34.394 INFO  com.xjtlu.wiki.WikiApplication                    :19   [32m                  [0;39m 地址: 	http://127.0.0.1:8888
-2022-04-01 11:49:35.732 INFO  com.xjtlu.wiki.WikiApplication                    :55   [32m                  [0;39m Starting WikiApplication using Java 1.8.0_101 on WIN-1J0EG9O62MI with PID 8472 (C:\Users\Administrator.000\Desktop\wiki\target\classes started by Administrator in C:\Users\Administrator.000\Desktop\wiki)
-2022-04-01 11:49:35.733 INFO  com.xjtlu.wiki.WikiApplication                    :640  [32m                  [0;39m No active profile set, falling back to 1 default profile: "default"
-2022-04-01 11:49:35.772 INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor :255  [32m                  [0;39m Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2022-04-01 11:49:35.772 INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor :255  [32m                  [0;39m For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2022-04-01 11:49:36.611 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m                  [0;39m Tomcat initialized with port(s): 8888 (http)
-2022-04-01 11:49:36.618 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8888"]
-2022-04-01 11:49:36.618 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
-2022-04-01 11:49:36.618 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/9.0.58]
-2022-04-01 11:49:36.680 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
-2022-04-01 11:49:36.681 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :290  [32m                  [0;39m Root WebApplicationContext: initialization completed in 908 ms
-2022-04-01 11:49:37.204 WARN  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :61   [32m                  [0;39m Unable to start LiveReload server
-2022-04-01 11:49:37.216 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8888"]
-2022-04-01 11:49:37.220 WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext:591  [32m                  [0;39m Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'; nested exception is org.springframework.boot.web.server.PortInUseException: Port 8888 is already in use
-2022-04-01 11:49:37.224 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Pausing ProtocolHandler ["http-nio-8888"]
-2022-04-01 11:49:37.224 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Stopping service [Tomcat]
-2022-04-01 11:49:37.227 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Stopping ProtocolHandler ["http-nio-8888"]
-2022-04-01 11:49:37.228 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Destroying ProtocolHandler ["http-nio-8888"]
-2022-04-01 11:49:37.232 INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener:136  [32m                  [0;39m 
-
-Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
-2022-04-01 11:49:37.251 ERROR o.s.b.diagnostics.LoggingFailureAnalysisReporter  :40   [32m                  [0;39m 
-
-***************************
-APPLICATION FAILED TO START
-***************************
-
-Description:
-
-Web server failed to start. Port 8888 was already in use.
-
-Action:
-
-Identify and stop the process that's listening on port 8888 or configure this application to listen on another port.
-
-2022-04-01 11:50:05.727 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring DispatcherServlet 'dispatcherServlet'
-2022-04-01 11:50:05.729 INFO  org.springframework.web.servlet.DispatcherServlet :525  [32m                  [0;39m Initializing Servlet 'dispatcherServlet'
-2022-04-01 11:50:05.730 INFO  org.springframework.web.servlet.DispatcherServlet :547  [32m                  [0;39m Completed initialization in 1 ms
-2022-04-01 11:50:05.734 INFO  com.zaxxer.hikari.HikariDataSource                :110  [32m                  [0;39m HikariPool-2 - Starting...
-2022-04-01 11:50:05.745 INFO  com.zaxxer.hikari.HikariDataSource                :123  [32m                  [0;39m HikariPool-2 - Start completed.
-2022-04-01 11:52:58.887 INFO  com.zaxxer.hikari.HikariDataSource                :350  [32m                  [0;39m HikariPool-2 - Shutdown initiated...
-2022-04-01 11:52:58.892 INFO  com.zaxxer.hikari.HikariDataSource                :352  [32m                  [0;39m HikariPool-2 - Shutdown completed.
-2022-04-01 11:52:59.065 INFO  com.xjtlu.wiki.WikiApplication                    :55   [32m                  [0;39m Starting WikiApplication using Java 1.8.0_101 on WIN-1J0EG9O62MI with PID 5784 (C:\Users\Administrator.000\Desktop\wiki\target\classes started by Administrator in C:\Users\Administrator.000\Desktop\wiki)
-2022-04-01 11:52:59.065 INFO  com.xjtlu.wiki.WikiApplication                    :640  [32m                  [0;39m No active profile set, falling back to 1 default profile: "default"
-2022-04-01 11:52:59.295 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m                  [0;39m Tomcat initialized with port(s): 8888 (http)
-2022-04-01 11:52:59.295 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8888"]
-2022-04-01 11:52:59.295 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
-2022-04-01 11:52:59.295 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/9.0.58]
-2022-04-01 11:52:59.315 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
-2022-04-01 11:52:59.316 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :290  [32m                  [0;39m Root WebApplicationContext: initialization completed in 248 ms
-2022-04-01 11:52:59.416 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :58   [32m                  [0;39m LiveReload server is running on port 35729
-2022-04-01 11:52:59.421 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8888"]
-2022-04-01 11:52:59.423 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220  [32m                  [0;39m Tomcat started on port(s): 8888 (http) with context path ''
-2022-04-01 11:52:59.426 INFO  com.xjtlu.wiki.WikiApplication                    :61   [32m                  [0;39m Started WikiApplication in 0.404 seconds (JVM running for 1840.185)
-2022-04-01 11:52:59.427 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener :63   [32m                  [0;39m Condition evaluation unchanged
-2022-04-01 11:52:59.427 INFO  com.xjtlu.wiki.WikiApplication                    :18   [32m                  [0;39m 启动成功！！
-2022-04-01 11:52:59.428 INFO  com.xjtlu.wiki.WikiApplication                    :19   [32m                  [0;39m 地址: 	http://127.0.0.1:8888
-2022-04-01 11:53:49.496 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring DispatcherServlet 'dispatcherServlet'
-2022-04-01 11:53:49.497 INFO  org.springframework.web.servlet.DispatcherServlet :525  [32m                  [0;39m Initializing Servlet 'dispatcherServlet'
-2022-04-01 11:53:49.500 INFO  org.springframework.web.servlet.DispatcherServlet :547  [32m                  [0;39m Completed initialization in 2 ms
-2022-04-01 11:53:49.512 INFO  com.zaxxer.hikari.HikariDataSource                :110  [32m                  [0;39m HikariPool-3 - Starting...
-2022-04-01 11:53:49.522 INFO  com.zaxxer.hikari.HikariDataSource                :123  [32m                  [0;39m HikariPool-3 - Start completed.
-2022-04-01 12:00:00.500 INFO  com.zaxxer.hikari.HikariDataSource                :350  [32m                  [0;39m HikariPool-3 - Shutdown initiated...
-2022-04-01 12:00:00.505 INFO  com.zaxxer.hikari.HikariDataSource                :352  [32m                  [0;39m HikariPool-3 - Shutdown completed.
-2022-04-01 12:00:00.648 INFO  com.xjtlu.wiki.WikiApplication                    :55   [32m                  [0;39m Starting WikiApplication using Java 1.8.0_101 on WIN-1J0EG9O62MI with PID 5784 (C:\Users\Administrator.000\Desktop\wiki\target\classes started by Administrator in C:\Users\Administrator.000\Desktop\wiki)
-2022-04-01 12:00:00.649 INFO  com.xjtlu.wiki.WikiApplication                    :640  [32m                  [0;39m No active profile set, falling back to 1 default profile: "default"
-2022-04-01 12:00:00.898 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m                  [0;39m Tomcat initialized with port(s): 8888 (http)
-2022-04-01 12:00:00.899 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8888"]
-2022-04-01 12:00:00.899 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
-2022-04-01 12:00:00.899 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/9.0.58]
-2022-04-01 12:00:00.918 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
-2022-04-01 12:00:00.918 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :290  [32m                  [0;39m Root WebApplicationContext: initialization completed in 266 ms
-2022-04-01 12:00:01.029 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :58   [32m                  [0;39m LiveReload server is running on port 35729
-2022-04-01 12:00:01.035 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8888"]
-2022-04-01 12:00:01.036 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220  [32m                  [0;39m Tomcat started on port(s): 8888 (http) with context path ''
-2022-04-01 12:00:01.039 INFO  com.xjtlu.wiki.WikiApplication                    :61   [32m                  [0;39m Started WikiApplication in 0.431 seconds (JVM running for 2261.798)
-2022-04-01 12:00:01.041 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener :63   [32m                  [0;39m Condition evaluation unchanged
-2022-04-01 12:00:01.041 INFO  com.xjtlu.wiki.WikiApplication                    :18   [32m                  [0;39m 启动成功！！
-2022-04-01 12:00:01.041 INFO  com.xjtlu.wiki.WikiApplication                    :19   [32m                  [0;39m 地址: 	http://127.0.0.1:8888
-2022-04-01 12:00:11.660 INFO  com.xjtlu.wiki.WikiApplication                    :55   [32m                  [0;39m Starting WikiApplication using Java 1.8.0_101 on WIN-1J0EG9O62MI with PID 13308 (C:\Users\Administrator.000\Desktop\wiki\target\classes started by Administrator in C:\Users\Administrator.000\Desktop\wiki)
-2022-04-01 12:00:11.662 INFO  com.xjtlu.wiki.WikiApplication                    :640  [32m                  [0;39m No active profile set, falling back to 1 default profile: "default"
-2022-04-01 12:00:11.698 INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor :255  [32m                  [0;39m Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2022-04-01 12:00:11.699 INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor :255  [32m                  [0;39m For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2022-04-01 12:00:12.538 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m                  [0;39m Tomcat initialized with port(s): 8888 (http)
-2022-04-01 12:00:12.545 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8888"]
-2022-04-01 12:00:12.545 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
-2022-04-01 12:00:12.546 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/9.0.58]
-2022-04-01 12:00:12.615 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
-2022-04-01 12:00:12.615 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :290  [32m                  [0;39m Root WebApplicationContext: initialization completed in 916 ms
-2022-04-01 12:00:13.210 WARN  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :61   [32m                  [0;39m Unable to start LiveReload server
-2022-04-01 12:00:13.226 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8888"]
-2022-04-01 12:00:13.234 WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext:591  [32m                  [0;39m Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'; nested exception is org.springframework.boot.web.server.PortInUseException: Port 8888 is already in use
-2022-04-01 12:00:13.238 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Pausing ProtocolHandler ["http-nio-8888"]
-2022-04-01 12:00:13.238 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Stopping service [Tomcat]
-2022-04-01 12:00:13.245 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Stopping ProtocolHandler ["http-nio-8888"]
-2022-04-01 12:00:13.246 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Destroying ProtocolHandler ["http-nio-8888"]
-2022-04-01 12:00:13.254 INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener:136  [32m                  [0;39m 
-
-Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
-2022-04-01 12:00:13.288 ERROR o.s.b.diagnostics.LoggingFailureAnalysisReporter  :40   [32m                  [0;39m 
-
-***************************
-APPLICATION FAILED TO START
-***************************
-
-Description:
-
-Web server failed to start. Port 8888 was already in use.
-
-Action:
-
-Identify and stop the process that's listening on port 8888 or configure this application to listen on another port.
-
-2022-04-01 12:00:38.840 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring DispatcherServlet 'dispatcherServlet'
-2022-04-01 12:00:38.842 INFO  org.springframework.web.servlet.DispatcherServlet :525  [32m                  [0;39m Initializing Servlet 'dispatcherServlet'
-2022-04-01 12:00:38.842 INFO  org.springframework.web.servlet.DispatcherServlet :547  [32m                  [0;39m Completed initialization in 0 ms
-2022-04-01 12:00:38.847 INFO  com.zaxxer.hikari.HikariDataSource                :110  [32m                  [0;39m HikariPool-4 - Starting...
-2022-04-01 12:00:38.857 INFO  com.zaxxer.hikari.HikariDataSource                :123  [32m                  [0;39m HikariPool-4 - Start completed.
-2022-04-01 12:00:49.943 INFO  com.xjtlu.wiki.WikiApplication                    :55   [32m                  [0;39m Starting WikiApplication using Java 1.8.0_101 on WIN-1J0EG9O62MI with PID 3492 (C:\Users\Administrator.000\Desktop\wiki\target\classes started by Administrator in C:\Users\Administrator.000\Desktop\wiki)
-2022-04-01 12:00:49.945 INFO  com.xjtlu.wiki.WikiApplication                    :640  [32m                  [0;39m No active profile set, falling back to 1 default profile: "default"
-2022-04-01 12:00:49.983 INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor :255  [32m                  [0;39m Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2022-04-01 12:00:49.983 INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor :255  [32m                  [0;39m For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2022-04-01 12:00:50.851 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m                  [0;39m Tomcat initialized with port(s): 8888 (http)
-2022-04-01 12:00:50.859 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8888"]
-2022-04-01 12:00:50.859 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
-2022-04-01 12:00:50.859 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/9.0.58]
-2022-04-01 12:00:50.950 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
-2022-04-01 12:00:50.950 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :290  [32m                  [0;39m Root WebApplicationContext: initialization completed in 966 ms
-2022-04-01 12:00:51.476 WARN  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :61   [32m                  [0;39m Unable to start LiveReload server
-2022-04-01 12:00:51.488 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8888"]
-2022-04-01 12:00:51.492 WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext:591  [32m                  [0;39m Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'; nested exception is org.springframework.boot.web.server.PortInUseException: Port 8888 is already in use
-2022-04-01 12:00:51.495 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Pausing ProtocolHandler ["http-nio-8888"]
-2022-04-01 12:00:51.496 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Stopping service [Tomcat]
-2022-04-01 12:00:51.499 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Stopping ProtocolHandler ["http-nio-8888"]
-2022-04-01 12:00:51.499 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Destroying ProtocolHandler ["http-nio-8888"]
-2022-04-01 12:00:51.505 INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener:136  [32m                  [0;39m 
-
-Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
-2022-04-01 12:00:51.521 ERROR o.s.b.diagnostics.LoggingFailureAnalysisReporter  :40   [32m                  [0;39m 
-
-***************************
-APPLICATION FAILED TO START
-***************************
-
-Description:
-
-Web server failed to start. Port 8888 was already in use.
-
-Action:
-
-Identify and stop the process that's listening on port 8888 or configure this application to listen on another port.
-
-2022-04-01 12:01:08.390 INFO  com.zaxxer.hikari.HikariDataSource                :350  [32m                  [0;39m HikariPool-4 - Shutdown initiated...
-2022-04-01 12:01:08.396 INFO  com.zaxxer.hikari.HikariDataSource                :352  [32m                  [0;39m HikariPool-4 - Shutdown completed.
-2022-04-01 12:01:08.514 INFO  com.xjtlu.wiki.WikiApplication                    :55   [32m                  [0;39m Starting WikiApplication using Java 1.8.0_101 on WIN-1J0EG9O62MI with PID 5784 (C:\Users\Administrator.000\Desktop\wiki\target\classes started by Administrator in C:\Users\Administrator.000\Desktop\wiki)
-2022-04-01 12:01:08.514 INFO  com.xjtlu.wiki.WikiApplication                    :640  [32m                  [0;39m No active profile set, falling back to 1 default profile: "default"
-2022-04-01 12:01:08.794 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m                  [0;39m Tomcat initialized with port(s): 8000 (http)
-2022-04-01 12:01:08.795 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8000"]
-2022-04-01 12:01:08.795 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
-2022-04-01 12:01:08.795 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/9.0.58]
-2022-04-01 12:01:08.820 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
-2022-04-01 12:01:08.820 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :290  [32m                  [0;39m Root WebApplicationContext: initialization completed in 304 ms
-2022-04-01 12:01:08.939 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :58   [32m                  [0;39m LiveReload server is running on port 35729
-2022-04-01 12:01:08.944 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8000"]
-2022-04-01 12:01:08.945 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220  [32m                  [0;39m Tomcat started on port(s): 8000 (http) with context path ''
-2022-04-01 12:01:08.949 INFO  com.xjtlu.wiki.WikiApplication                    :61   [32m                  [0;39m Started WikiApplication in 0.47 seconds (JVM running for 2329.708)
-2022-04-01 12:01:08.950 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener :63   [32m                  [0;39m Condition evaluation unchanged
-2022-04-01 12:01:08.950 INFO  com.xjtlu.wiki.WikiApplication                    :18   [32m                  [0;39m 启动成功！！
-2022-04-01 12:01:08.951 INFO  com.xjtlu.wiki.WikiApplication                    :19   [32m                  [0;39m 地址: 	http://127.0.0.1:8000
-2022-04-01 12:01:08.967 INFO  com.xjtlu.wiki.WikiApplication                    :55   [32m                  [0;39m Starting WikiApplication using Java 1.8.0_101 on WIN-1J0EG9O62MI with PID 10252 (C:\Users\Administrator.000\Desktop\wiki\target\classes started by Administrator in C:\Users\Administrator.000\Desktop\wiki)
-2022-04-01 12:01:08.969 INFO  com.xjtlu.wiki.WikiApplication                    :640  [32m                  [0;39m No active profile set, falling back to 1 default profile: "default"
-2022-04-01 12:01:09.005 INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor :255  [32m                  [0;39m Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2022-04-01 12:01:09.005 INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor :255  [32m                  [0;39m For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2022-04-01 12:01:09.915 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m                  [0;39m Tomcat initialized with port(s): 8000 (http)
-2022-04-01 12:01:09.922 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8000"]
-2022-04-01 12:01:09.923 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
-2022-04-01 12:01:09.923 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/9.0.58]
-2022-04-01 12:01:09.987 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
-2022-04-01 12:01:09.987 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :290  [32m                  [0;39m Root WebApplicationContext: initialization completed in 982 ms
-2022-04-01 12:01:10.539 WARN  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :61   [32m                  [0;39m Unable to start LiveReload server
-2022-04-01 12:01:10.552 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8000"]
-2022-04-01 12:01:10.556 WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext:591  [32m                  [0;39m Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'; nested exception is org.springframework.boot.web.server.PortInUseException: Port 8000 is already in use
-2022-04-01 12:01:10.560 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Pausing ProtocolHandler ["http-nio-8000"]
-2022-04-01 12:01:10.560 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Stopping service [Tomcat]
-2022-04-01 12:01:10.564 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Stopping ProtocolHandler ["http-nio-8000"]
-2022-04-01 12:01:10.564 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Destroying ProtocolHandler ["http-nio-8000"]
-2022-04-01 12:01:10.571 INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener:136  [32m                  [0;39m 
-
-Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
-2022-04-01 12:01:10.589 ERROR o.s.b.diagnostics.LoggingFailureAnalysisReporter  :40   [32m                  [0;39m 
-
-***************************
-APPLICATION FAILED TO START
-***************************
-
-Description:
-
-Web server failed to start. Port 8000 was already in use.
-
-Action:
-
-Identify and stop the process that's listening on port 8000 or configure this application to listen on another port.
-
-2022-04-01 12:01:21.008 INFO  com.xjtlu.wiki.WikiApplication                    :55   [32m                  [0;39m Starting WikiApplication using Java 1.8.0_101 on WIN-1J0EG9O62MI with PID 5784 (C:\Users\Administrator.000\Desktop\wiki\target\classes started by Administrator in C:\Users\Administrator.000\Desktop\wiki)
-2022-04-01 12:01:21.008 INFO  com.xjtlu.wiki.WikiApplication                    :640  [32m                  [0;39m No active profile set, falling back to 1 default profile: "default"
-2022-04-01 12:01:21.275 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m                  [0;39m Tomcat initialized with port(s): 8880 (http)
-2022-04-01 12:01:21.276 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8880"]
-2022-04-01 12:01:21.276 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
-2022-04-01 12:01:21.276 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/9.0.58]
-2022-04-01 12:01:21.295 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
-2022-04-01 12:01:21.295 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :290  [32m                  [0;39m Root WebApplicationContext: initialization completed in 284 ms
-2022-04-01 12:01:21.416 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :58   [32m                  [0;39m LiveReload server is running on port 35729
-2022-04-01 12:01:21.423 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8880"]
-2022-04-01 12:01:21.424 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220  [32m                  [0;39m Tomcat started on port(s): 8880 (http) with context path ''
-2022-04-01 12:01:21.429 INFO  com.xjtlu.wiki.WikiApplication                    :61   [32m                  [0;39m Started WikiApplication in 0.46 seconds (JVM running for 2342.188)
-2022-04-01 12:01:21.431 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener :63   [32m                  [0;39m Condition evaluation unchanged
-2022-04-01 12:01:21.431 INFO  com.xjtlu.wiki.WikiApplication                    :18   [32m                  [0;39m 启动成功！！
-2022-04-01 12:01:21.431 INFO  com.xjtlu.wiki.WikiApplication                    :19   [32m                  [0;39m 地址: 	http://127.0.0.1:8880
-2022-04-01 12:01:21.436 INFO  com.xjtlu.wiki.WikiApplication                    :55   [32m                  [0;39m Starting WikiApplication using Java 1.8.0_101 on WIN-1J0EG9O62MI with PID 3312 (C:\Users\Administrator.000\Desktop\wiki\target\classes started by Administrator in C:\Users\Administrator.000\Desktop\wiki)
-2022-04-01 12:01:21.437 INFO  com.xjtlu.wiki.WikiApplication                    :640  [32m                  [0;39m No active profile set, falling back to 1 default profile: "default"
-2022-04-01 12:01:21.474 INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor :255  [32m                  [0;39m Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2022-04-01 12:01:21.474 INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor :255  [32m                  [0;39m For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2022-04-01 12:01:22.319 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m                  [0;39m Tomcat initialized with port(s): 8880 (http)
-2022-04-01 12:01:22.326 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8880"]
-2022-04-01 12:01:22.326 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
-2022-04-01 12:01:22.327 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/9.0.58]
-2022-04-01 12:01:22.395 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
-2022-04-01 12:01:22.395 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :290  [32m                  [0;39m Root WebApplicationContext: initialization completed in 920 ms
-2022-04-01 12:01:22.940 WARN  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :61   [32m                  [0;39m Unable to start LiveReload server
-2022-04-01 12:01:22.954 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8880"]
-2022-04-01 12:01:22.958 WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext:591  [32m                  [0;39m Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'; nested exception is org.springframework.boot.web.server.PortInUseException: Port 8880 is already in use
-2022-04-01 12:01:22.962 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Pausing ProtocolHandler ["http-nio-8880"]
-2022-04-01 12:01:22.963 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Stopping service [Tomcat]
-2022-04-01 12:01:22.966 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Stopping ProtocolHandler ["http-nio-8880"]
-2022-04-01 12:01:22.966 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Destroying ProtocolHandler ["http-nio-8880"]
-2022-04-01 12:01:22.972 INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener:136  [32m                  [0;39m 
-
-Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
-2022-04-01 12:01:22.988 ERROR o.s.b.diagnostics.LoggingFailureAnalysisReporter  :40   [32m                  [0;39m 
-
-***************************
-APPLICATION FAILED TO START
-***************************
-
-Description:
-
-Web server failed to start. Port 8880 was already in use.
-
-Action:
-
-Identify and stop the process that's listening on port 8880 or configure this application to listen on another port.
-
-2022-04-01 12:01:31.454 INFO  com.xjtlu.wiki.WikiApplication                    :55   [32m                  [0;39m Starting WikiApplication using Java 1.8.0_101 on WIN-1J0EG9O62MI with PID 5784 (C:\Users\Administrator.000\Desktop\wiki\target\classes started by Administrator in C:\Users\Administrator.000\Desktop\wiki)
-2022-04-01 12:01:31.454 INFO  com.xjtlu.wiki.WikiApplication                    :640  [32m                  [0;39m No active profile set, falling back to 1 default profile: "default"
-2022-04-01 12:01:31.682 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m                  [0;39m Tomcat initialized with port(s): 10000 (http)
-2022-04-01 12:01:31.683 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-10000"]
-2022-04-01 12:01:31.683 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
-2022-04-01 12:01:31.683 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/9.0.58]
-2022-04-01 12:01:31.710 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
-2022-04-01 12:01:31.710 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :290  [32m                  [0;39m Root WebApplicationContext: initialization completed in 253 ms
-2022-04-01 12:01:31.838 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :58   [32m                  [0;39m LiveReload server is running on port 35729
-2022-04-01 12:01:31.845 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-10000"]
-2022-04-01 12:01:31.847 WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext:591  [32m                  [0;39m Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'; nested exception is org.springframework.boot.web.server.PortInUseException: Port 10000 is already in use
-2022-04-01 12:01:31.848 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Pausing ProtocolHandler ["http-nio-10000"]
-2022-04-01 12:01:31.849 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Stopping service [Tomcat]
-2022-04-01 12:01:31.850 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Stopping ProtocolHandler ["http-nio-10000"]
-2022-04-01 12:01:31.851 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Destroying ProtocolHandler ["http-nio-10000"]
-2022-04-01 12:01:31.854 INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener:136  [32m                  [0;39m 
-
-Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
-2022-04-01 12:01:31.874 ERROR o.s.b.diagnostics.LoggingFailureAnalysisReporter  :40   [32m                  [0;39m 
-
-***************************
-APPLICATION FAILED TO START
-***************************
-
-Description:
-
-Web server failed to start. Port 10000 was already in use.
-
-Action:
-
-Identify and stop the process that's listening on port 10000 or configure this application to listen on another port.
-
-2022-04-01 12:01:31.959 INFO  com.xjtlu.wiki.WikiApplication                    :55   [32m                  [0;39m Starting WikiApplication using Java 1.8.0_101 on WIN-1J0EG9O62MI with PID 1944 (C:\Users\Administrator.000\Desktop\wiki\target\classes started by Administrator in C:\Users\Administrator.000\Desktop\wiki)
-2022-04-01 12:01:31.960 INFO  com.xjtlu.wiki.WikiApplication                    :640  [32m                  [0;39m No active profile set, falling back to 1 default profile: "default"
-2022-04-01 12:01:31.997 INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor :255  [32m                  [0;39m Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2022-04-01 12:01:31.997 INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor :255  [32m                  [0;39m For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2022-04-01 12:01:32.858 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m                  [0;39m Tomcat initialized with port(s): 10000 (http)
-2022-04-01 12:01:32.865 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-10000"]
-2022-04-01 12:01:32.865 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
-2022-04-01 12:01:32.866 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/9.0.58]
-2022-04-01 12:01:32.928 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
-2022-04-01 12:01:32.928 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :290  [32m                  [0;39m Root WebApplicationContext: initialization completed in 930 ms
-2022-04-01 12:01:33.468 WARN  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :61   [32m                  [0;39m Unable to start LiveReload server
-2022-04-01 12:01:33.481 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-10000"]
-2022-04-01 12:01:33.485 WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext:591  [32m                  [0;39m Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'; nested exception is org.springframework.boot.web.server.PortInUseException: Port 10000 is already in use
-2022-04-01 12:01:33.490 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Pausing ProtocolHandler ["http-nio-10000"]
-2022-04-01 12:01:33.490 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Stopping service [Tomcat]
-2022-04-01 12:01:33.494 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Stopping ProtocolHandler ["http-nio-10000"]
-2022-04-01 12:01:33.495 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Destroying ProtocolHandler ["http-nio-10000"]
-2022-04-01 12:01:33.501 INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener:136  [32m                  [0;39m 
-
-Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
-2022-04-01 12:01:33.520 ERROR o.s.b.diagnostics.LoggingFailureAnalysisReporter  :40   [32m                  [0;39m 
-
-***************************
-APPLICATION FAILED TO START
-***************************
-
-Description:
-
-Web server failed to start. Port 10000 was already in use.
-
-Action:
-
-Identify and stop the process that's listening on port 10000 or configure this application to listen on another port.
-
-2022-04-01 12:01:51.761 INFO  com.xjtlu.wiki.WikiApplication                    :55   [32m                  [0;39m Starting WikiApplication using Java 1.8.0_101 on WIN-1J0EG9O62MI with PID 5784 (C:\Users\Administrator.000\Desktop\wiki\target\classes started by Administrator in C:\Users\Administrator.000\Desktop\wiki)
-2022-04-01 12:01:51.761 INFO  com.xjtlu.wiki.WikiApplication                    :640  [32m                  [0;39m No active profile set, falling back to 1 default profile: "default"
-2022-04-01 12:01:52.022 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m                  [0;39m Tomcat initialized with port(s): 8888 (http)
-2022-04-01 12:01:52.022 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8888"]
-2022-04-01 12:01:52.023 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
-2022-04-01 12:01:52.023 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/9.0.58]
-2022-04-01 12:01:52.048 INFO  o.a.c.c.ContainerBase.[Tomcat-1].[localhost].[/]  :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
-2022-04-01 12:01:52.049 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :290  [32m                  [0;39m Root WebApplicationContext: initialization completed in 285 ms
-2022-04-01 12:01:52.172 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :58   [32m                  [0;39m LiveReload server is running on port 35729
-2022-04-01 12:01:52.179 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8888"]
-2022-04-01 12:01:52.182 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220  [32m                  [0;39m Tomcat started on port(s): 8888 (http) with context path ''
-2022-04-01 12:01:52.185 INFO  com.xjtlu.wiki.WikiApplication                    :61   [32m                  [0;39m Started WikiApplication in 0.457 seconds (JVM running for 2372.944)
-2022-04-01 12:01:52.187 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener :63   [32m                  [0;39m Condition evaluation unchanged
-2022-04-01 12:01:52.189 INFO  com.xjtlu.wiki.WikiApplication                    :18   [32m                  [0;39m 启动成功！！
-2022-04-01 12:01:52.190 INFO  com.xjtlu.wiki.WikiApplication                    :19   [32m                  [0;39m 地址: 	http://127.0.0.1:8888
-2022-04-01 12:01:52.333 INFO  com.xjtlu.wiki.WikiApplication                    :55   [32m                  [0;39m Starting WikiApplication using Java 1.8.0_101 on WIN-1J0EG9O62MI with PID 7628 (C:\Users\Administrator.000\Desktop\wiki\target\classes started by Administrator in C:\Users\Administrator.000\Desktop\wiki)
-2022-04-01 12:01:52.334 INFO  com.xjtlu.wiki.WikiApplication                    :640  [32m                  [0;39m No active profile set, falling back to 1 default profile: "default"
-2022-04-01 12:01:52.372 INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor :255  [32m                  [0;39m Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2022-04-01 12:01:52.372 INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor :255  [32m                  [0;39m For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2022-04-01 12:01:53.212 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m                  [0;39m Tomcat initialized with port(s): 8888 (http)
-2022-04-01 12:01:53.219 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8888"]
-2022-04-01 12:01:53.219 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
-2022-04-01 12:01:53.219 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/9.0.58]
-2022-04-01 12:01:53.283 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
-2022-04-01 12:01:53.283 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :290  [32m                  [0;39m Root WebApplicationContext: initialization completed in 910 ms
-2022-04-01 12:01:53.825 WARN  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :61   [32m                  [0;39m Unable to start LiveReload server
-2022-04-01 12:01:53.837 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8888"]
-2022-04-01 12:01:53.841 WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext:591  [32m                  [0;39m Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'; nested exception is org.springframework.boot.web.server.PortInUseException: Port 8888 is already in use
-2022-04-01 12:01:53.845 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Pausing ProtocolHandler ["http-nio-8888"]
-2022-04-01 12:01:53.846 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Stopping service [Tomcat]
-2022-04-01 12:01:53.849 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Stopping ProtocolHandler ["http-nio-8888"]
-2022-04-01 12:01:53.849 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Destroying ProtocolHandler ["http-nio-8888"]
-2022-04-01 12:01:53.855 INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener:136  [32m                  [0;39m 
-
-Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
-2022-04-01 12:01:53.872 ERROR o.s.b.diagnostics.LoggingFailureAnalysisReporter  :40   [32m                  [0;39m 
-
-***************************
-APPLICATION FAILED TO START
-***************************
-
-Description:
-
-Web server failed to start. Port 8888 was already in use.
-
-Action:
-
-Identify and stop the process that's listening on port 8888 or configure this application to listen on another port.
-
-2022-04-01 12:02:51.416 INFO  o.a.c.c.ContainerBase.[Tomcat-1].[localhost].[/]  :173  [32m                  [0;39m Initializing Spring DispatcherServlet 'dispatcherServlet'
-2022-04-01 12:02:51.418 INFO  org.springframework.web.servlet.DispatcherServlet :525  [32m                  [0;39m Initializing Servlet 'dispatcherServlet'
-2022-04-01 12:02:51.419 INFO  org.springframework.web.servlet.DispatcherServlet :547  [32m                  [0;39m Completed initialization in 1 ms
-2022-04-01 12:02:51.423 INFO  com.zaxxer.hikari.HikariDataSource                :110  [32m                  [0;39m HikariPool-5 - Starting...
-2022-04-01 12:02:51.434 INFO  com.zaxxer.hikari.HikariDataSource                :123  [32m                  [0;39m HikariPool-5 - Start completed.
-2022-04-01 12:10:37.871 INFO  com.xjtlu.wiki.WikiApplication                    :55   [32m                  [0;39m Starting WikiApplication using Java 1.8.0_101 on WIN-1J0EG9O62MI with PID 8772 (C:\Users\Administrator.000\Desktop\wiki\target\classes started by Administrator in C:\Users\Administrator.000\Desktop\wiki)
-2022-04-01 12:10:37.873 INFO  com.xjtlu.wiki.WikiApplication                    :640  [32m                  [0;39m No active profile set, falling back to 1 default profile: "default"
-2022-04-01 12:10:37.913 INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor :255  [32m                  [0;39m Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2022-04-01 12:10:37.913 INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor :255  [32m                  [0;39m For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2022-04-01 12:10:38.721 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m                  [0;39m Tomcat initialized with port(s): 8888 (http)
-2022-04-01 12:10:38.728 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8888"]
-2022-04-01 12:10:38.728 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
-2022-04-01 12:10:38.729 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/9.0.58]
-2022-04-01 12:10:38.790 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
-2022-04-01 12:10:38.791 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :290  [32m                  [0;39m Root WebApplicationContext: initialization completed in 877 ms
-2022-04-01 12:10:39.294 WARN  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :61   [32m                  [0;39m Unable to start LiveReload server
-2022-04-01 12:10:39.306 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8888"]
-2022-04-01 12:10:39.309 WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext:591  [32m                  [0;39m Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'; nested exception is org.springframework.boot.web.server.PortInUseException: Port 8888 is already in use
-2022-04-01 12:10:39.313 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Pausing ProtocolHandler ["http-nio-8888"]
-2022-04-01 12:10:39.313 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Stopping service [Tomcat]
-2022-04-01 12:10:39.319 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Stopping ProtocolHandler ["http-nio-8888"]
-2022-04-01 12:10:39.319 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Destroying ProtocolHandler ["http-nio-8888"]
-2022-04-01 12:10:39.324 INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener:136  [32m                  [0;39m 
-
-Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
-2022-04-01 12:10:39.342 ERROR o.s.b.diagnostics.LoggingFailureAnalysisReporter  :40   [32m                  [0;39m 
-
-***************************
-APPLICATION FAILED TO START
-***************************
-
-Description:
-
-Web server failed to start. Port 8888 was already in use.
-
-Action:
-
-Identify and stop the process that's listening on port 8888 or configure this application to listen on another port.
-
-2022-04-01 12:14:51.986 INFO  com.xjtlu.wiki.WikiApplication                    :55   [32m                  [0;39m Starting WikiApplication using Java 1.8.0_101 on WIN-1J0EG9O62MI with PID 12124 (C:\Users\Administrator.000\Desktop\wiki\target\classes started by Administrator in C:\Users\Administrator.000\Desktop\wiki)
-2022-04-01 12:14:51.987 INFO  com.xjtlu.wiki.WikiApplication                    :640  [32m                  [0;39m No active profile set, falling back to 1 default profile: "default"
-2022-04-01 12:14:52.035 INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor :255  [32m                  [0;39m Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2022-04-01 12:14:52.035 INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor :255  [32m                  [0;39m For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2022-04-01 12:14:52.865 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m                  [0;39m Tomcat initialized with port(s): 8888 (http)
-2022-04-01 12:14:52.872 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8888"]
-2022-04-01 12:14:52.872 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
-2022-04-01 12:14:52.872 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/9.0.58]
-2022-04-01 12:14:52.940 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
-2022-04-01 12:14:52.940 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :290  [32m                  [0;39m Root WebApplicationContext: initialization completed in 904 ms
-2022-04-01 12:14:53.555 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :58   [32m                  [0;39m LiveReload server is running on port 35729
-2022-04-01 12:14:53.566 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8888"]
-2022-04-01 12:14:53.578 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220  [32m                  [0;39m Tomcat started on port(s): 8888 (http) with context path ''
-2022-04-01 12:14:53.586 INFO  com.xjtlu.wiki.WikiApplication                    :61   [32m                  [0;39m Started WikiApplication in 1.97 seconds (JVM running for 2.747)
-2022-04-01 12:14:53.589 INFO  com.xjtlu.wiki.WikiApplication                    :18   [32m                  [0;39m 启动成功！！
-2022-04-01 12:14:53.590 INFO  com.xjtlu.wiki.WikiApplication                    :19   [32m                  [0;39m 地址: 	http://127.0.0.1:8888
-2022-04-14 18:31:16.316 INFO  com.xjtlu.wiki.WikiApplication                    :55   [32m                  [0;39m Starting WikiApplication using Java 1.8.0_101 on WIN-1J0EG9O62MI with PID 8968 (C:\Users\Administrator.000\Desktop\wiki\target\classes started by Administrator in C:\Users\Administrator.000\Desktop\wiki)
-2022-04-14 18:31:16.317 INFO  com.xjtlu.wiki.WikiApplication                    :640  [32m                  [0;39m No active profile set, falling back to 1 default profile: "default"
-2022-04-14 18:31:16.369 INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor :255  [32m                  [0;39m Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2022-04-14 18:31:16.369 INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor :255  [32m                  [0;39m For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2022-04-14 18:31:17.713 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m                  [0;39m Tomcat initialized with port(s): 8888 (http)
-2022-04-14 18:31:17.723 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8888"]
-2022-04-14 18:31:17.723 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
-2022-04-14 18:31:17.724 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/9.0.58]
-2022-04-14 18:31:17.797 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
-2022-04-14 18:31:17.797 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :290  [32m                  [0;39m Root WebApplicationContext: initialization completed in 1427 ms
-2022-04-14 18:31:18.497 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :58   [32m                  [0;39m LiveReload server is running on port 35729
-2022-04-14 18:31:18.509 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8888"]
-2022-04-14 18:31:18.521 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220  [32m                  [0;39m Tomcat started on port(s): 8888 (http) with context path ''
-2022-04-14 18:31:18.530 INFO  com.xjtlu.wiki.WikiApplication                    :61   [32m                  [0;39m Started WikiApplication in 2.746 seconds (JVM running for 4.169)
-2022-04-14 18:31:18.531 INFO  com.xjtlu.wiki.WikiApplication                    :18   [32m                  [0;39m 启动成功！！
-2022-04-14 18:31:18.532 INFO  com.xjtlu.wiki.WikiApplication                    :19   [32m                  [0;39m 地址: 	http://127.0.0.1:8888
-2022-04-14 18:31:47.067 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring DispatcherServlet 'dispatcherServlet'
-2022-04-14 18:31:47.068 INFO  org.springframework.web.servlet.DispatcherServlet :525  [32m                  [0;39m Initializing Servlet 'dispatcherServlet'
-2022-04-14 18:31:47.069 INFO  org.springframework.web.servlet.DispatcherServlet :547  [32m                  [0;39m Completed initialization in 1 ms
-2022-04-14 18:31:47.158 INFO  com.zaxxer.hikari.HikariDataSource                :110  [32m                  [0;39m HikariPool-1 - Starting...
-2022-04-14 18:31:47.639 INFO  com.zaxxer.hikari.HikariDataSource                :123  [32m                  [0;39m HikariPool-1 - Start completed.
-2022-04-14 18:34:34.390 INFO  com.zaxxer.hikari.HikariDataSource                :350  [32m                  [0;39m HikariPool-1 - Shutdown initiated...
-2022-04-14 18:34:34.397 INFO  com.zaxxer.hikari.HikariDataSource                :352  [32m                  [0;39m HikariPool-1 - Shutdown completed.
-2022-04-14 18:34:34.539 INFO  com.xjtlu.wiki.WikiApplication                    :55   [32m                  [0;39m Starting WikiApplication using Java 1.8.0_101 on WIN-1J0EG9O62MI with PID 8968 (C:\Users\Administrator.000\Desktop\wiki\target\classes started by Administrator in C:\Users\Administrator.000\Desktop\wiki)
-2022-04-14 18:34:34.539 INFO  com.xjtlu.wiki.WikiApplication                    :640  [32m                  [0;39m No active profile set, falling back to 1 default profile: "default"
-2022-04-14 18:34:34.982 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m                  [0;39m Tomcat initialized with port(s): 8888 (http)
-2022-04-14 18:34:34.983 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8888"]
-2022-04-14 18:34:34.983 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
-2022-04-14 18:34:34.983 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/9.0.58]
-2022-04-14 18:34:35.016 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
-2022-04-14 18:34:35.016 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :290  [32m                  [0;39m Root WebApplicationContext: initialization completed in 474 ms
-2022-04-14 18:34:35.291 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :58   [32m                  [0;39m LiveReload server is running on port 35729
-2022-04-14 18:34:35.299 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8888"]
-2022-04-14 18:34:35.301 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220  [32m                  [0;39m Tomcat started on port(s): 8888 (http) with context path ''
-2022-04-14 18:34:35.308 INFO  com.xjtlu.wiki.WikiApplication                    :61   [32m                  [0;39m Started WikiApplication in 0.814 seconds (JVM running for 200.948)
-2022-04-14 18:34:35.310 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener :63   [32m                  [0;39m Condition evaluation unchanged
-2022-04-14 18:34:35.311 INFO  com.xjtlu.wiki.WikiApplication                    :18   [32m                  [0;39m 启动成功！！
-2022-04-14 18:34:35.312 INFO  com.xjtlu.wiki.WikiApplication                    :19   [32m                  [0;39m 地址: 	http://127.0.0.1:8888
-2022-04-14 18:34:54.144 INFO  com.xjtlu.wiki.WikiApplication                    :55   [32m                  [0;39m Starting WikiApplication using Java 1.8.0_101 on WIN-1J0EG9O62MI with PID 8968 (C:\Users\Administrator.000\Desktop\wiki\target\classes started by Administrator in C:\Users\Administrator.000\Desktop\wiki)
-2022-04-14 18:34:54.144 INFO  com.xjtlu.wiki.WikiApplication                    :640  [32m                  [0;39m No active profile set, falling back to 1 default profile: "default"
-2022-04-14 18:34:54.369 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m                  [0;39m Tomcat initialized with port(s): 8888 (http)
-2022-04-14 18:34:54.369 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8888"]
-2022-04-14 18:34:54.370 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
-2022-04-14 18:34:54.370 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/9.0.58]
-2022-04-14 18:34:54.392 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
-2022-04-14 18:34:54.392 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :290  [32m                  [0;39m Root WebApplicationContext: initialization completed in 245 ms
-2022-04-14 18:34:54.496 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :58   [32m                  [0;39m LiveReload server is running on port 35729
-2022-04-14 18:34:54.501 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8888"]
-2022-04-14 18:34:54.503 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220  [32m                  [0;39m Tomcat started on port(s): 8888 (http) with context path ''
-2022-04-14 18:34:54.506 INFO  com.xjtlu.wiki.WikiApplication                    :61   [32m                  [0;39m Started WikiApplication in 0.405 seconds (JVM running for 220.146)
-2022-04-14 18:34:54.508 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener :63   [32m                  [0;39m Condition evaluation unchanged
-2022-04-14 18:34:54.509 INFO  com.xjtlu.wiki.WikiApplication                    :18   [32m                  [0;39m 启动成功！！
-2022-04-14 18:34:54.509 INFO  com.xjtlu.wiki.WikiApplication                    :19   [32m                  [0;39m 地址: 	http://127.0.0.1:8888
-2022-04-14 18:37:45.787 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring DispatcherServlet 'dispatcherServlet'
-2022-04-14 18:37:45.788 INFO  org.springframework.web.servlet.DispatcherServlet :525  [32m                  [0;39m Initializing Servlet 'dispatcherServlet'
-2022-04-14 18:37:45.789 INFO  org.springframework.web.servlet.DispatcherServlet :547  [32m                  [0;39m Completed initialization in 0 ms
-2022-04-14 18:37:45.793 INFO  com.zaxxer.hikari.HikariDataSource                :110  [32m                  [0;39m HikariPool-2 - Starting...
-2022-04-14 18:37:45.806 INFO  com.zaxxer.hikari.HikariDataSource                :123  [32m                  [0;39m HikariPool-2 - Start completed.
-2022-04-14 18:37:50.962 INFO  com.zaxxer.hikari.HikariDataSource                :350  [32m                  [0;39m HikariPool-2 - Shutdown initiated...
-2022-04-14 18:37:50.969 INFO  com.zaxxer.hikari.HikariDataSource                :352  [32m                  [0;39m HikariPool-2 - Shutdown completed.
-2022-04-14 18:37:51.136 INFO  com.xjtlu.wiki.WikiApplication                    :55   [32m                  [0;39m Starting WikiApplication using Java 1.8.0_101 on WIN-1J0EG9O62MI with PID 8968 (C:\Users\Administrator.000\Desktop\wiki\target\classes started by Administrator in C:\Users\Administrator.000\Desktop\wiki)
-2022-04-14 18:37:51.136 INFO  com.xjtlu.wiki.WikiApplication                    :640  [32m                  [0;39m No active profile set, falling back to 1 default profile: "default"
-2022-04-14 18:37:51.412 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m                  [0;39m Tomcat initialized with port(s): 8888 (http)
-2022-04-14 18:37:51.412 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8888"]
-2022-04-14 18:37:51.413 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
-2022-04-14 18:37:51.413 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/9.0.58]
-2022-04-14 18:37:51.443 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
-2022-04-14 18:37:51.444 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :290  [32m                  [0;39m Root WebApplicationContext: initialization completed in 305 ms
-2022-04-14 18:37:51.587 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :58   [32m                  [0;39m LiveReload server is running on port 35729
-2022-04-14 18:37:51.593 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8888"]
-2022-04-14 18:37:51.594 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220  [32m                  [0;39m Tomcat started on port(s): 8888 (http) with context path ''
-2022-04-14 18:37:51.600 INFO  com.xjtlu.wiki.WikiApplication                    :61   [32m                  [0;39m Started WikiApplication in 0.512 seconds (JVM running for 397.241)
-2022-04-14 18:37:51.601 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener :63   [32m                  [0;39m Condition evaluation unchanged
-2022-04-14 18:37:51.602 INFO  com.xjtlu.wiki.WikiApplication                    :18   [32m                  [0;39m 启动成功！！
-2022-04-14 18:37:51.602 INFO  com.xjtlu.wiki.WikiApplication                    :19   [32m                  [0;39m 地址: 	http://127.0.0.1:8888
-2022-04-14 18:38:13.045 INFO  com.xjtlu.wiki.WikiApplication                    :55   [32m                  [0;39m Starting WikiApplication using Java 1.8.0_101 on WIN-1J0EG9O62MI with PID 9020 (C:\Users\Administrator.000\Desktop\wiki\target\classes started by Administrator in C:\Users\Administrator.000\Desktop\wiki)
-2022-04-14 18:38:13.047 INFO  com.xjtlu.wiki.WikiApplication                    :640  [32m                  [0;39m No active profile set, falling back to 1 default profile: "default"
-2022-04-14 18:38:13.094 INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor :255  [32m                  [0;39m Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2022-04-14 18:38:13.095 INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor :255  [32m                  [0;39m For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2022-04-14 18:38:14.137 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m                  [0;39m Tomcat initialized with port(s): 8888 (http)
-2022-04-14 18:38:14.148 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8888"]
-2022-04-14 18:38:14.149 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
-2022-04-14 18:38:14.149 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/9.0.58]
-2022-04-14 18:38:14.239 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
-2022-04-14 18:38:14.240 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :290  [32m                  [0;39m Root WebApplicationContext: initialization completed in 1145 ms
-2022-04-14 18:38:15.177 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :58   [32m                  [0;39m LiveReload server is running on port 35729
-2022-04-14 18:38:15.191 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8888"]
-2022-04-14 18:38:15.206 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220  [32m                  [0;39m Tomcat started on port(s): 8888 (http) with context path ''
-2022-04-14 18:38:15.215 INFO  com.xjtlu.wiki.WikiApplication                    :61   [32m                  [0;39m Started WikiApplication in 2.687 seconds (JVM running for 3.619)
-2022-04-14 18:38:15.218 INFO  com.xjtlu.wiki.WikiApplication                    :18   [32m                  [0;39m 启动成功！！
-2022-04-14 18:38:15.219 INFO  com.xjtlu.wiki.WikiApplication                    :19   [32m                  [0;39m 地址: 	http://127.0.0.1:8888
-2022-04-14 18:44:34.587 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring DispatcherServlet 'dispatcherServlet'
-2022-04-14 18:44:34.587 INFO  org.springframework.web.servlet.DispatcherServlet :525  [32m                  [0;39m Initializing Servlet 'dispatcherServlet'
-2022-04-14 18:44:34.588 INFO  org.springframework.web.servlet.DispatcherServlet :547  [32m                  [0;39m Completed initialization in 0 ms
-2022-04-14 18:44:34.728 INFO  com.zaxxer.hikari.HikariDataSource                :110  [32m                  [0;39m HikariPool-1 - Starting...
-2022-04-14 18:44:35.169 INFO  com.zaxxer.hikari.HikariDataSource                :123  [32m                  [0;39m HikariPool-1 - Start completed.
-2022-04-14 19:24:45.484 INFO  com.xjtlu.wiki.WikiApplication                    :55   [32m                  [0;39m Starting WikiApplication using Java 1.8.0_101 on WIN-1J0EG9O62MI with PID 13588 (C:\Users\Administrator.000\Desktop\wiki\target\classes started by Administrator in C:\Users\Administrator.000\Desktop\wiki)
-2022-04-14 19:24:45.486 INFO  com.xjtlu.wiki.WikiApplication                    :640  [32m                  [0;39m No active profile set, falling back to 1 default profile: "default"
-2022-04-14 19:24:45.527 INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor :255  [32m                  [0;39m Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2022-04-14 19:24:45.527 INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor :255  [32m                  [0;39m For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2022-04-14 19:24:46.659 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m                  [0;39m Tomcat initialized with port(s): 8888 (http)
-2022-04-14 19:24:46.667 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8888"]
-2022-04-14 19:24:46.668 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
-2022-04-14 19:24:46.668 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/9.0.58]
-2022-04-14 19:24:46.743 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
-2022-04-14 19:24:46.743 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :290  [32m                  [0;39m Root WebApplicationContext: initialization completed in 1215 ms
-2022-04-14 19:24:47.363 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :58   [32m                  [0;39m LiveReload server is running on port 35729
-2022-04-14 19:24:47.377 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8888"]
-2022-04-14 19:24:47.390 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220  [32m                  [0;39m Tomcat started on port(s): 8888 (http) with context path ''
-2022-04-14 19:24:47.407 INFO  com.xjtlu.wiki.WikiApplication                    :61   [32m                  [0;39m Started WikiApplication in 2.42 seconds (JVM running for 3.949)
-2022-04-14 19:24:47.412 INFO  com.xjtlu.wiki.WikiApplication                    :18   [32m                  [0;39m 启动成功！！
-2022-04-14 19:24:47.412 INFO  com.xjtlu.wiki.WikiApplication                    :19   [32m                  [0;39m 地址: 	http://127.0.0.1:8888
-2022-04-14 19:25:56.773 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring DispatcherServlet 'dispatcherServlet'
-2022-04-14 19:25:56.774 INFO  org.springframework.web.servlet.DispatcherServlet :525  [32m                  [0;39m Initializing Servlet 'dispatcherServlet'
-2022-04-14 19:25:56.776 INFO  org.springframework.web.servlet.DispatcherServlet :547  [32m                  [0;39m Completed initialization in 1 ms
-2022-04-14 19:25:57.146 INFO  com.zaxxer.hikari.HikariDataSource                :110  [32m                  [0;39m HikariPool-1 - Starting...
-2022-04-14 19:25:58.237 INFO  com.zaxxer.hikari.HikariDataSource                :123  [32m                  [0;39m HikariPool-1 - Start completed.
-2022-04-14 19:33:58.890 INFO  com.zaxxer.hikari.HikariDataSource                :350  [32m                  [0;39m HikariPool-1 - Shutdown initiated...
-2022-04-14 19:33:58.896 INFO  com.zaxxer.hikari.HikariDataSource                :352  [32m                  [0;39m HikariPool-1 - Shutdown completed.
-2022-04-14 19:33:59.038 INFO  com.xjtlu.wiki.WikiApplication                    :55   [32m                  [0;39m Starting WikiApplication using Java 1.8.0_101 on WIN-1J0EG9O62MI with PID 13588 (C:\Users\Administrator.000\Desktop\wiki\target\classes started by Administrator in C:\Users\Administrator.000\Desktop\wiki)
-2022-04-14 19:33:59.038 INFO  com.xjtlu.wiki.WikiApplication                    :640  [32m                  [0;39m No active profile set, falling back to 1 default profile: "default"
-2022-04-14 19:33:59.391 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m                  [0;39m Tomcat initialized with port(s): 8888 (http)
-2022-04-14 19:33:59.391 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8888"]
-2022-04-14 19:33:59.391 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
-2022-04-14 19:33:59.392 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/9.0.58]
-2022-04-14 19:33:59.413 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
-2022-04-14 19:33:59.413 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :290  [32m                  [0;39m Root WebApplicationContext: initialization completed in 372 ms
-2022-04-14 19:33:59.552 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :58   [32m                  [0;39m LiveReload server is running on port 35729
-2022-04-14 19:33:59.559 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8888"]
-2022-04-14 19:33:59.561 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220  [32m                  [0;39m Tomcat started on port(s): 8888 (http) with context path ''
-2022-04-14 19:33:59.565 INFO  com.xjtlu.wiki.WikiApplication                    :61   [32m                  [0;39m Started WikiApplication in 0.573 seconds (JVM running for 556.107)
-2022-04-14 19:33:59.566 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener :63   [32m                  [0;39m Condition evaluation unchanged
-2022-04-14 19:33:59.567 INFO  com.xjtlu.wiki.WikiApplication                    :18   [32m                  [0;39m 启动成功！！
-2022-04-14 19:33:59.568 INFO  com.xjtlu.wiki.WikiApplication                    :19   [32m                  [0;39m 地址: 	http://127.0.0.1:8888
-2022-04-14 19:34:01.370 INFO  com.xjtlu.wiki.WikiApplication                    :55   [32m                  [0;39m Starting WikiApplication using Java 1.8.0_101 on WIN-1J0EG9O62MI with PID 13588 (C:\Users\Administrator.000\Desktop\wiki\target\classes started by Administrator in C:\Users\Administrator.000\Desktop\wiki)
-2022-04-14 19:34:01.370 INFO  com.xjtlu.wiki.WikiApplication                    :640  [32m                  [0;39m No active profile set, falling back to 1 default profile: "default"
-2022-04-14 19:34:01.778 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m                  [0;39m Tomcat initialized with port(s): 8888 (http)
-2022-04-14 19:34:01.779 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8888"]
-2022-04-14 19:34:01.779 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
-2022-04-14 19:34:01.779 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/9.0.58]
-2022-04-14 19:34:01.800 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
-2022-04-14 19:34:01.800 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :290  [32m                  [0;39m Root WebApplicationContext: initialization completed in 393 ms
-2022-04-14 19:34:01.917 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :58   [32m                  [0;39m LiveReload server is running on port 35729
-2022-04-14 19:34:01.922 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8888"]
-2022-04-14 19:34:01.924 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220  [32m                  [0;39m Tomcat started on port(s): 8888 (http) with context path ''
-2022-04-14 19:34:01.928 INFO  com.xjtlu.wiki.WikiApplication                    :61   [32m                  [0;39m Started WikiApplication in 0.655 seconds (JVM running for 558.47)
-2022-04-14 19:34:01.929 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener :63   [32m                  [0;39m Condition evaluation unchanged
-2022-04-14 19:34:01.930 INFO  com.xjtlu.wiki.WikiApplication                    :18   [32m                  [0;39m 启动成功！！
-2022-04-14 19:34:01.930 INFO  com.xjtlu.wiki.WikiApplication                    :19   [32m                  [0;39m 地址: 	http://127.0.0.1:8888
-2022-04-14 19:36:29.246 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring DispatcherServlet 'dispatcherServlet'
-2022-04-14 19:36:29.246 INFO  org.springframework.web.servlet.DispatcherServlet :525  [32m                  [0;39m Initializing Servlet 'dispatcherServlet'
-2022-04-14 19:36:29.247 INFO  org.springframework.web.servlet.DispatcherServlet :547  [32m                  [0;39m Completed initialization in 0 ms
-2022-04-14 19:36:29.251 INFO  com.zaxxer.hikari.HikariDataSource                :110  [32m                  [0;39m HikariPool-2 - Starting...
-2022-04-14 19:36:29.264 INFO  com.zaxxer.hikari.HikariDataSource                :123  [32m                  [0;39m HikariPool-2 - Start completed.
-2022-04-14 19:47:22.030 INFO  com.xjtlu.wiki.WikiApplication                    :55   [32m                  [0;39m Starting WikiApplication using Java 1.8.0_101 on WIN-1J0EG9O62MI with PID 368 (C:\Users\Administrator.000\Desktop\wiki\target\classes started by Administrator in C:\Users\Administrator.000\Desktop\wiki)
-2022-04-14 19:47:22.031 INFO  com.xjtlu.wiki.WikiApplication                    :640  [32m                  [0;39m No active profile set, falling back to 1 default profile: "default"
-2022-04-14 19:47:22.081 INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor :255  [32m                  [0;39m Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2022-04-14 19:47:22.081 INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor :255  [32m                  [0;39m For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2022-04-14 19:47:23.211 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m                  [0;39m Tomcat initialized with port(s): 8888 (http)
-2022-04-14 19:47:23.220 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8888"]
-2022-04-14 19:47:23.220 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
-2022-04-14 19:47:23.220 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/9.0.58]
-2022-04-14 19:47:23.296 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
-2022-04-14 19:47:23.296 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :290  [32m                  [0;39m Root WebApplicationContext: initialization completed in 1215 ms
-2022-04-14 19:47:23.918 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :58   [32m                  [0;39m LiveReload server is running on port 35729
-2022-04-14 19:47:23.931 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8888"]
-2022-04-14 19:47:23.946 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220  [32m                  [0;39m Tomcat started on port(s): 8888 (http) with context path ''
-2022-04-14 19:47:23.965 INFO  com.xjtlu.wiki.WikiApplication                    :61   [32m                  [0;39m Started WikiApplication in 2.442 seconds (JVM running for 4.103)
-2022-04-14 19:47:23.968 INFO  com.xjtlu.wiki.WikiApplication                    :18   [32m                  [0;39m 启动成功！！
-2022-04-14 19:47:23.969 INFO  com.xjtlu.wiki.WikiApplication                    :19   [32m                  [0;39m 地址: 	http://127.0.0.1:8888
-2022-04-14 19:47:51.367 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring DispatcherServlet 'dispatcherServlet'
-2022-04-14 19:47:51.367 INFO  org.springframework.web.servlet.DispatcherServlet :525  [32m                  [0;39m Initializing Servlet 'dispatcherServlet'
-2022-04-14 19:47:51.368 INFO  org.springframework.web.servlet.DispatcherServlet :547  [32m                  [0;39m Completed initialization in 0 ms
-2022-04-14 19:47:51.498 INFO  com.zaxxer.hikari.HikariDataSource                :110  [32m                  [0;39m HikariPool-1 - Starting...
-2022-04-14 19:47:52.145 INFO  com.zaxxer.hikari.HikariDataSource                :123  [32m                  [0;39m HikariPool-1 - Start completed.
-2022-04-14 19:51:26.840 INFO  com.xjtlu.wiki.WikiApplication                    :55   [32m                  [0;39m Starting WikiApplication using Java 1.8.0_101 on WIN-1J0EG9O62MI with PID 8492 (C:\Users\Administrator.000\Desktop\wiki\target\classes started by Administrator in C:\Users\Administrator.000\Desktop\wiki)
-2022-04-14 19:51:26.844 INFO  com.xjtlu.wiki.WikiApplication                    :640  [32m                  [0;39m No active profile set, falling back to 1 default profile: "default"
-2022-04-14 19:51:26.924 INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor :255  [32m                  [0;39m Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2022-04-14 19:51:26.925 INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor :255  [32m                  [0;39m For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2022-04-14 19:51:28.116 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m                  [0;39m Tomcat initialized with port(s): 8888 (http)
-2022-04-14 19:51:28.125 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8888"]
-2022-04-14 19:51:28.126 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
-2022-04-14 19:51:28.126 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/9.0.58]
-2022-04-14 19:51:28.203 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
-2022-04-14 19:51:28.203 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :290  [32m                  [0;39m Root WebApplicationContext: initialization completed in 1276 ms
-2022-04-14 19:51:28.924 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :58   [32m                  [0;39m LiveReload server is running on port 35729
-2022-04-14 19:51:28.939 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8888"]
-2022-04-14 19:51:28.953 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220  [32m                  [0;39m Tomcat started on port(s): 8888 (http) with context path ''
-2022-04-14 19:51:28.963 INFO  com.xjtlu.wiki.WikiApplication                    :61   [32m                  [0;39m Started WikiApplication in 2.74 seconds (JVM running for 4.105)
-2022-04-14 19:51:28.966 INFO  com.xjtlu.wiki.WikiApplication                    :18   [32m                  [0;39m 启动成功！！
-2022-04-14 19:51:28.966 INFO  com.xjtlu.wiki.WikiApplication                    :19   [32m                  [0;39m 地址: 	http://127.0.0.1:8888
-2022-04-14 19:52:06.477 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring DispatcherServlet 'dispatcherServlet'
-2022-04-14 19:52:06.478 INFO  org.springframework.web.servlet.DispatcherServlet :525  [32m                  [0;39m Initializing Servlet 'dispatcherServlet'
-2022-04-14 19:52:06.479 INFO  org.springframework.web.servlet.DispatcherServlet :547  [32m                  [0;39m Completed initialization in 1 ms
-2022-04-14 19:52:06.648 INFO  com.zaxxer.hikari.HikariDataSource                :110  [32m                  [0;39m HikariPool-1 - Starting...
-2022-04-14 19:52:07.109 INFO  com.zaxxer.hikari.HikariDataSource                :123  [32m                  [0;39m HikariPool-1 - Start completed.
-2022-04-14 20:18:14.151 INFO  com.xjtlu.wiki.WikiApplication                    :55   [32m                  [0;39m Starting WikiApplication using Java 1.8.0_101 on WIN-1J0EG9O62MI with PID 16904 (C:\Users\Administrator.000\Desktop\wiki\target\classes started by Administrator in C:\Users\Administrator.000\Desktop\wiki)
-2022-04-14 20:18:14.153 INFO  com.xjtlu.wiki.WikiApplication                    :640  [32m                  [0;39m No active profile set, falling back to 1 default profile: "default"
-2022-04-14 20:18:14.193 INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor :255  [32m                  [0;39m Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2022-04-14 20:18:14.193 INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor :255  [32m                  [0;39m For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2022-04-14 20:18:15.332 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m                  [0;39m Tomcat initialized with port(s): 8888 (http)
-2022-04-14 20:18:15.341 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8888"]
-2022-04-14 20:18:15.342 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
-2022-04-14 20:18:15.342 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/9.0.58]
-2022-04-14 20:18:15.412 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
-2022-04-14 20:18:15.412 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :290  [32m                  [0;39m Root WebApplicationContext: initialization completed in 1218 ms
-2022-04-14 20:18:16.143 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :58   [32m                  [0;39m LiveReload server is running on port 35729
-2022-04-14 20:18:16.158 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8888"]
-2022-04-14 20:18:16.173 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220  [32m                  [0;39m Tomcat started on port(s): 8888 (http) with context path ''
-2022-04-14 20:18:16.187 INFO  com.xjtlu.wiki.WikiApplication                    :61   [32m                  [0;39m Started WikiApplication in 2.581 seconds (JVM running for 4.279)
-2022-04-14 20:18:16.190 INFO  com.xjtlu.wiki.WikiApplication                    :18   [32m                  [0;39m 启动成功！！
-2022-04-14 20:18:16.191 INFO  com.xjtlu.wiki.WikiApplication                    :19   [32m                  [0;39m 地址: 	http://127.0.0.1:8888
-2022-04-14 20:18:56.974 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring DispatcherServlet 'dispatcherServlet'
-2022-04-14 20:18:56.974 INFO  org.springframework.web.servlet.DispatcherServlet :525  [32m                  [0;39m Initializing Servlet 'dispatcherServlet'
-2022-04-14 20:18:56.975 INFO  org.springframework.web.servlet.DispatcherServlet :547  [32m                  [0;39m Completed initialization in 1 ms
-2022-04-14 20:18:57.082 INFO  com.zaxxer.hikari.HikariDataSource                :110  [32m                  [0;39m HikariPool-1 - Starting...
-2022-04-14 20:18:57.392 INFO  com.zaxxer.hikari.HikariDataSource                :123  [32m                  [0;39m HikariPool-1 - Start completed.
-2022-04-14 20:33:38.054 INFO  com.xjtlu.wiki.WikiApplication                    :55   [32m                  [0;39m Starting WikiApplication using Java 1.8.0_101 on WIN-1J0EG9O62MI with PID 16256 (C:\Users\Administrator.000\Desktop\wiki\target\classes started by Administrator in C:\Users\Administrator.000\Desktop\wiki)
-2022-04-14 20:33:38.055 INFO  com.xjtlu.wiki.WikiApplication                    :640  [32m                  [0;39m No active profile set, falling back to 1 default profile: "default"
-2022-04-14 20:33:38.096 INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor :255  [32m                  [0;39m Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2022-04-14 20:33:38.096 INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor :255  [32m                  [0;39m For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2022-04-14 20:33:39.391 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m                  [0;39m Tomcat initialized with port(s): 8888 (http)
-2022-04-14 20:33:39.403 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8888"]
-2022-04-14 20:33:39.404 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
-2022-04-14 20:33:39.404 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/9.0.58]
-2022-04-14 20:33:39.481 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
-2022-04-14 20:33:39.481 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :290  [32m                  [0;39m Root WebApplicationContext: initialization completed in 1384 ms
-2022-04-14 20:33:40.157 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :58   [32m                  [0;39m LiveReload server is running on port 35729
-2022-04-14 20:33:40.172 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8888"]
-2022-04-14 20:33:40.187 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220  [32m                  [0;39m Tomcat started on port(s): 8888 (http) with context path ''
-2022-04-14 20:33:40.199 INFO  com.xjtlu.wiki.WikiApplication                    :61   [32m                  [0;39m Started WikiApplication in 2.962 seconds (JVM running for 3.831)
-2022-04-14 20:33:40.202 INFO  com.xjtlu.wiki.WikiApplication                    :18   [32m                  [0;39m 启动成功！！
-2022-04-14 20:33:40.203 INFO  com.xjtlu.wiki.WikiApplication                    :19   [32m                  [0;39m 地址: 	http://127.0.0.1:8888
-2022-04-14 20:33:50.643 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring DispatcherServlet 'dispatcherServlet'
-2022-04-14 20:33:50.643 INFO  org.springframework.web.servlet.DispatcherServlet :525  [32m                  [0;39m Initializing Servlet 'dispatcherServlet'
-2022-04-14 20:33:50.644 INFO  org.springframework.web.servlet.DispatcherServlet :547  [32m                  [0;39m Completed initialization in 0 ms
-2022-04-14 20:33:50.739 INFO  com.zaxxer.hikari.HikariDataSource                :110  [32m                  [0;39m HikariPool-1 - Starting...
-2022-04-14 20:33:50.995 INFO  com.zaxxer.hikari.HikariDataSource                :123  [32m                  [0;39m HikariPool-1 - Start completed.
-2022-04-14 20:33:51.065 INFO  com.xjtlu.wiki.service.EbookService               :42   [32m                  [0;39m 总行数：5
-2022-04-14 20:33:51.066 INFO  com.xjtlu.wiki.service.EbookService               :43   [32m                  [0;39m 总页数：2
-2022-04-14 20:33:54.828 INFO  com.xjtlu.wiki.service.EbookService               :42   [32m                  [0;39m 总行数：5
-2022-04-14 20:33:54.828 INFO  com.xjtlu.wiki.service.EbookService               :43   [32m                  [0;39m 总页数：0
-2022-04-14 20:33:55.231 INFO  com.xjtlu.wiki.service.EbookService               :42   [32m                  [0;39m 总行数：5
-2022-04-14 20:33:55.231 INFO  com.xjtlu.wiki.service.EbookService               :43   [32m                  [0;39m 总页数：0
-2022-04-14 20:33:56.720 INFO  com.xjtlu.wiki.service.EbookService               :42   [32m                  [0;39m 总行数：5
-2022-04-14 20:33:56.721 INFO  com.xjtlu.wiki.service.EbookService               :43   [32m                  [0;39m 总页数：0
-2022-04-14 20:33:57.545 INFO  com.xjtlu.wiki.service.EbookService               :42   [32m                  [0;39m 总行数：5
-2022-04-14 20:33:57.546 INFO  com.xjtlu.wiki.service.EbookService               :43   [32m                  [0;39m 总页数：0
-2022-04-14 20:33:58.444 INFO  com.xjtlu.wiki.service.EbookService               :42   [32m                  [0;39m 总行数：5
-2022-04-14 20:33:58.445 INFO  com.xjtlu.wiki.service.EbookService               :43   [32m                  [0;39m 总页数：0
-2022-04-14 20:34:13.744 INFO  com.xjtlu.wiki.service.EbookService               :42   [32m                  [0;39m 总行数：5
-2022-04-14 20:34:13.744 INFO  com.xjtlu.wiki.service.EbookService               :43   [32m                  [0;39m 总页数：0
-2022-04-14 20:34:14.681 INFO  com.xjtlu.wiki.service.EbookService               :42   [32m                  [0;39m 总行数：5
-2022-04-14 20:34:14.682 INFO  com.xjtlu.wiki.service.EbookService               :43   [32m                  [0;39m 总页数：0
-2022-04-14 20:34:15.892 INFO  com.xjtlu.wiki.service.EbookService               :42   [32m                  [0;39m 总行数：5
-2022-04-14 20:34:15.893 INFO  com.xjtlu.wiki.service.EbookService               :43   [32m                  [0;39m 总页数：0
-2022-04-14 20:34:16.846 INFO  com.xjtlu.wiki.service.EbookService               :42   [32m                  [0;39m 总行数：5
-2022-04-14 20:34:16.847 INFO  com.xjtlu.wiki.service.EbookService               :43   [32m                  [0;39m 总页数：0
-2022-04-14 20:34:36.072 INFO  com.xjtlu.wiki.service.EbookService               :42   [32m                  [0;39m 总行数：5
-2022-04-14 20:34:36.073 INFO  com.xjtlu.wiki.service.EbookService               :43   [32m                  [0;39m 总页数：0
-2022-04-14 20:34:36.922 INFO  com.xjtlu.wiki.service.EbookService               :42   [32m                  [0;39m 总行数：5
-2022-04-14 20:34:36.923 INFO  com.xjtlu.wiki.service.EbookService               :43   [32m                  [0;39m 总页数：2
-2022-04-14 20:34:37.756 INFO  com.xjtlu.wiki.service.EbookService               :42   [32m                  [0;39m 总行数：5
-2022-04-14 20:34:37.756 INFO  com.xjtlu.wiki.service.EbookService               :43   [32m                  [0;39m 总页数：0
-2022-04-14 20:34:38.787 INFO  com.xjtlu.wiki.service.EbookService               :42   [32m                  [0;39m 总行数：5
-2022-04-14 20:34:38.787 INFO  com.xjtlu.wiki.service.EbookService               :43   [32m                  [0;39m 总页数：2
-2022-04-14 20:34:40.020 INFO  com.xjtlu.wiki.service.EbookService               :42   [32m                  [0;39m 总行数：5
-2022-04-14 20:34:40.021 INFO  com.xjtlu.wiki.service.EbookService               :43   [32m                  [0;39m 总页数：2
-2022-04-14 20:34:41.112 INFO  com.xjtlu.wiki.service.EbookService               :42   [32m                  [0;39m 总行数：5
-2022-04-14 20:34:41.113 INFO  com.xjtlu.wiki.service.EbookService               :43   [32m                  [0;39m 总页数：2
-2022-04-14 20:34:42.370 INFO  com.xjtlu.wiki.service.EbookService               :42   [32m                  [0;39m 总行数：5
-2022-04-14 20:34:42.371 INFO  com.xjtlu.wiki.service.EbookService               :43   [32m                  [0;39m 总页数：0
-2022-04-14 20:36:44.035 INFO  com.xjtlu.wiki.service.EbookService               :42   [32m                  [0;39m 总行数：5
-2022-04-14 20:36:44.036 INFO  com.xjtlu.wiki.service.EbookService               :43   [32m                  [0;39m 总页数：1
-2022-04-14 20:36:47.584 INFO  com.xjtlu.wiki.service.EbookService               :42   [32m                  [0;39m 总行数：5
-2022-04-14 20:36:47.584 INFO  com.xjtlu.wiki.service.EbookService               :43   [32m                  [0;39m 总页数：2
-2022-04-14 20:36:48.240 INFO  com.xjtlu.wiki.service.EbookService               :42   [32m                  [0;39m 总行数：5
-2022-04-14 20:36:48.240 INFO  com.xjtlu.wiki.service.EbookService               :43   [32m                  [0;39m 总页数：1
-2022-04-14 20:36:49.606 INFO  com.xjtlu.wiki.service.EbookService               :42   [32m                  [0;39m 总行数：5
-2022-04-14 20:36:49.606 INFO  com.xjtlu.wiki.service.EbookService               :43   [32m                  [0;39m 总页数：2
-2022-04-14 20:37:40.951 INFO  com.xjtlu.wiki.service.EbookService               :42   [32m                  [0;39m 总行数：5
-2022-04-14 20:37:40.952 INFO  com.xjtlu.wiki.service.EbookService               :43   [32m                  [0;39m 总页数：2
-2022-04-14 20:38:48.559 INFO  com.xjtlu.wiki.service.EbookService               :42   [32m                  [0;39m 总行数：5
-2022-04-14 20:38:48.560 INFO  com.xjtlu.wiki.service.EbookService               :43   [32m                  [0;39m 总页数：1
-2022-04-14 20:38:50.389 INFO  com.xjtlu.wiki.service.EbookService               :42   [32m                  [0;39m 总行数：5
-2022-04-14 20:38:50.390 INFO  com.xjtlu.wiki.service.EbookService               :43   [32m                  [0;39m 总页数：1
-2022-04-14 20:38:56.183 INFO  com.xjtlu.wiki.service.EbookService               :42   [32m                  [0;39m 总行数：5
-2022-04-14 20:38:56.184 INFO  com.xjtlu.wiki.service.EbookService               :43   [32m                  [0;39m 总页数：2
-2022-04-14 20:39:43.164 INFO  com.xjtlu.wiki.service.EbookService               :42   [32m                  [0;39m 总行数：5
-2022-04-14 20:39:43.164 INFO  com.xjtlu.wiki.service.EbookService               :43   [32m                  [0;39m 总页数：2
-2022-04-14 20:40:46.583 INFO  com.xjtlu.wiki.service.EbookService               :42   [32m                  [0;39m 总行数：5
-2022-04-14 20:40:46.583 INFO  com.xjtlu.wiki.service.EbookService               :43   [32m                  [0;39m 总页数：2
-2022-04-14 20:54:11.025 INFO  com.xjtlu.wiki.service.EbookService               :42   [32m                  [0;39m 总行数：5
-2022-04-14 20:54:11.026 INFO  com.xjtlu.wiki.service.EbookService               :43   [32m                  [0;39m 总页数：2
-2022-04-14 21:01:30.661 INFO  com.zaxxer.hikari.HikariDataSource                :350  [32m                  [0;39m HikariPool-1 - Shutdown initiated...
-2022-04-14 21:01:30.668 INFO  com.zaxxer.hikari.HikariDataSource                :352  [32m                  [0;39m HikariPool-1 - Shutdown completed.
-2022-04-14 21:01:30.898 INFO  com.xjtlu.wiki.WikiApplication                    :55   [32m                  [0;39m Starting WikiApplication using Java 1.8.0_101 on WIN-1J0EG9O62MI with PID 16256 (C:\Users\Administrator.000\Desktop\wiki\target\classes started by Administrator in C:\Users\Administrator.000\Desktop\wiki)
-2022-04-14 21:01:30.899 INFO  com.xjtlu.wiki.WikiApplication                    :640  [32m                  [0;39m No active profile set, falling back to 1 default profile: "default"
-2022-04-14 21:01:31.316 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m                  [0;39m Tomcat initialized with port(s): 8888 (http)
-2022-04-14 21:01:31.317 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8888"]
-2022-04-14 21:01:31.317 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
-2022-04-14 21:01:31.317 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/9.0.58]
-2022-04-14 21:01:31.338 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
-2022-04-14 21:01:31.339 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :290  [32m                  [0;39m Root WebApplicationContext: initialization completed in 435 ms
-2022-04-14 21:01:31.481 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :58   [32m                  [0;39m LiveReload server is running on port 35729
-2022-04-14 21:01:31.488 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8888"]
-2022-04-14 21:01:31.490 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220  [32m                  [0;39m Tomcat started on port(s): 8888 (http) with context path ''
-2022-04-14 21:01:31.494 INFO  com.xjtlu.wiki.WikiApplication                    :61   [32m                  [0;39m Started WikiApplication in 0.658 seconds (JVM running for 1675.126)
-2022-04-14 21:01:31.496 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener :63   [32m                  [0;39m Condition evaluation unchanged
-2022-04-14 21:01:31.496 INFO  com.xjtlu.wiki.WikiApplication                    :18   [32m                  [0;39m 启动成功！！
-2022-04-14 21:01:31.496 INFO  com.xjtlu.wiki.WikiApplication                    :19   [32m                  [0;39m 地址: 	http://127.0.0.1:8888
-2022-04-14 21:01:33.616 INFO  com.xjtlu.wiki.WikiApplication                    :55   [32m                  [0;39m Starting WikiApplication using Java 1.8.0_101 on WIN-1J0EG9O62MI with PID 16256 (C:\Users\Administrator.000\Desktop\wiki\target\classes started by Administrator in C:\Users\Administrator.000\Desktop\wiki)
-2022-04-14 21:01:33.616 INFO  com.xjtlu.wiki.WikiApplication                    :640  [32m                  [0;39m No active profile set, falling back to 1 default profile: "default"
-2022-04-14 21:01:33.858 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m                  [0;39m Tomcat initialized with port(s): 8888 (http)
-2022-04-14 21:01:33.859 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8888"]
-2022-04-14 21:01:33.859 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
-2022-04-14 21:01:33.859 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/9.0.58]
-2022-04-14 21:01:33.880 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
-2022-04-14 21:01:33.880 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :290  [32m                  [0;39m Root WebApplicationContext: initialization completed in 260 ms
-2022-04-14 21:01:33.983 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :58   [32m                  [0;39m LiveReload server is running on port 35729
-2022-04-14 21:01:33.988 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8888"]
-2022-04-14 21:01:33.989 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220  [32m                  [0;39m Tomcat started on port(s): 8888 (http) with context path ''
-2022-04-14 21:01:33.993 INFO  com.xjtlu.wiki.WikiApplication                    :61   [32m                  [0;39m Started WikiApplication in 0.443 seconds (JVM running for 1677.625)
-2022-04-14 21:01:33.993 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener :63   [32m                  [0;39m Condition evaluation unchanged
-2022-04-14 21:01:33.994 INFO  com.xjtlu.wiki.WikiApplication                    :18   [32m                  [0;39m 启动成功！！
-2022-04-14 21:01:33.994 INFO  com.xjtlu.wiki.WikiApplication                    :19   [32m                  [0;39m 地址: 	http://127.0.0.1:8888
+2022-04-21 18:07:34.564 INFO  org.hibernate.validator.internal.util.Version     :21   [32m                  [0;39m HV000001: Hibernate Validator 6.2.2.Final
+2022-04-21 18:07:34.572 INFO  com.xjtlu.wiki.WikiApplication                    :55   [32m                  [0;39m Starting WikiApplication using Java 1.8.0_101 on WIN-1J0EG9O62MI with PID 15740 (C:\Users\Administrator.000\Desktop\wiki\target\classes started by Administrator in C:\Users\Administrator.000\Desktop\wiki)
+2022-04-21 18:07:34.573 INFO  com.xjtlu.wiki.WikiApplication                    :640  [32m                  [0;39m No active profile set, falling back to 1 default profile: "default"
+2022-04-21 18:07:34.625 INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor :255  [32m                  [0;39m Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-04-21 18:07:34.626 INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor :255  [32m                  [0;39m For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-04-21 18:07:36.245 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m                  [0;39m Tomcat initialized with port(s): 8888 (http)
+2022-04-21 18:07:36.269 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8888"]
+2022-04-21 18:07:36.270 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
+2022-04-21 18:07:36.271 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/9.0.58]
+2022-04-21 18:07:36.376 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2022-04-21 18:07:36.376 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :290  [32m                  [0;39m Root WebApplicationContext: initialization completed in 1750 ms
+2022-04-21 18:07:37.373 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :58   [32m                  [0;39m LiveReload server is running on port 35729
+2022-04-21 18:07:37.391 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8888"]
+2022-04-21 18:07:37.413 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220  [32m                  [0;39m Tomcat started on port(s): 8888 (http) with context path ''
+2022-04-21 18:07:37.433 INFO  com.xjtlu.wiki.WikiApplication                    :61   [32m                  [0;39m Started WikiApplication in 3.514 seconds (JVM running for 4.888)
+2022-04-21 18:07:37.436 INFO  com.xjtlu.wiki.WikiApplication                    :18   [32m                  [0;39m 启动成功！！
+2022-04-21 18:07:37.437 INFO  com.xjtlu.wiki.WikiApplication                    :19   [32m                  [0;39m 地址: 	http://127.0.0.1:8888
+2022-04-21 18:09:04.345 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-04-21 18:09:04.345 INFO  org.springframework.web.servlet.DispatcherServlet :525  [32m                  [0;39m Initializing Servlet 'dispatcherServlet'
+2022-04-21 18:09:04.347 INFO  org.springframework.web.servlet.DispatcherServlet :547  [32m                  [0;39m Completed initialization in 1 ms
+2022-04-21 18:09:04.524 INFO  com.zaxxer.hikari.HikariDataSource                :110  [32m                  [0;39m HikariPool-1 - Starting...
+2022-04-21 18:09:05.027 INFO  com.zaxxer.hikari.HikariDataSource                :123  [32m                  [0;39m HikariPool-1 - Start completed.
+2022-04-21 18:09:05.083 INFO  com.xjtlu.wiki.service.EbookService               :48   [32m                  [0;39m 总行数：5
+2022-04-21 18:09:05.083 INFO  com.xjtlu.wiki.service.EbookService               :49   [32m                  [0;39m 总页数：1
+2022-04-21 18:09:08.288 INFO  com.xjtlu.wiki.service.EbookService               :48   [32m                  [0;39m 总行数：5
+2022-04-21 18:09:08.289 INFO  com.xjtlu.wiki.service.EbookService               :49   [32m                  [0;39m 总页数：1
+2022-04-21 18:09:12.467 INFO  com.xjtlu.wiki.service.EbookService               :48   [32m                  [0;39m 总行数：5
+2022-04-21 18:09:12.467 INFO  com.xjtlu.wiki.service.EbookService               :49   [32m                  [0;39m 总页数：1
+2022-04-21 18:09:17.465 INFO  com.xjtlu.wiki.service.EbookService               :48   [32m                  [0;39m 总行数：6
+2022-04-21 18:09:17.466 INFO  com.xjtlu.wiki.service.EbookService               :49   [32m                  [0;39m 总页数：1
+2022-04-21 18:09:19.101 INFO  com.xjtlu.wiki.service.EbookService               :48   [32m                  [0;39m 总行数：5
+2022-04-21 18:09:19.101 INFO  com.xjtlu.wiki.service.EbookService               :49   [32m                  [0;39m 总页数：1
+2022-04-21 18:09:44.738 INFO  com.xjtlu.wiki.service.EbookService               :48   [32m                  [0;39m 总行数：5
+2022-04-21 18:09:44.739 INFO  com.xjtlu.wiki.service.EbookService               :49   [32m                  [0;39m 总页数：1
+2022-04-21 18:12:24.010 INFO  com.zaxxer.hikari.HikariDataSource                :350  [32m                  [0;39m HikariPool-1 - Shutdown initiated...
+2022-04-21 18:12:24.021 INFO  com.zaxxer.hikari.HikariDataSource                :352  [32m                  [0;39m HikariPool-1 - Shutdown completed.
+2022-04-21 18:12:24.170 INFO  com.xjtlu.wiki.WikiApplication                    :55   [32m                  [0;39m Starting WikiApplication using Java 1.8.0_101 on WIN-1J0EG9O62MI with PID 15740 (C:\Users\Administrator.000\Desktop\wiki\target\classes started by Administrator in C:\Users\Administrator.000\Desktop\wiki)
+2022-04-21 18:12:24.170 INFO  com.xjtlu.wiki.WikiApplication                    :640  [32m                  [0;39m No active profile set, falling back to 1 default profile: "default"
+2022-04-21 18:12:24.536 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m                  [0;39m Tomcat initialized with port(s): 8888 (http)
+2022-04-21 18:12:24.537 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8888"]
+2022-04-21 18:12:24.537 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
+2022-04-21 18:12:24.537 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/9.0.58]
+2022-04-21 18:12:24.671 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2022-04-21 18:12:24.672 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :290  [32m                  [0;39m Root WebApplicationContext: initialization completed in 500 ms
+2022-04-21 18:12:25.307 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :58   [32m                  [0;39m LiveReload server is running on port 35729
+2022-04-21 18:12:25.363 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8888"]
+2022-04-21 18:12:25.393 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220  [32m                  [0;39m Tomcat started on port(s): 8888 (http) with context path ''
+2022-04-21 18:12:25.400 INFO  com.xjtlu.wiki.WikiApplication                    :61   [32m                  [0;39m Started WikiApplication in 1.273 seconds (JVM running for 292.856)
+2022-04-21 18:12:25.403 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener :63   [32m                  [0;39m Condition evaluation unchanged
+2022-04-21 18:12:25.455 INFO  com.xjtlu.wiki.WikiApplication                    :18   [32m                  [0;39m 启动成功！！
+2022-04-21 18:12:25.455 INFO  com.xjtlu.wiki.WikiApplication                    :19   [32m                  [0;39m 地址: 	http://127.0.0.1:8888
+2022-04-21 18:12:29.397 INFO  com.xjtlu.wiki.WikiApplication                    :55   [32m                  [0;39m Starting WikiApplication using Java 1.8.0_101 on WIN-1J0EG9O62MI with PID 15740 (C:\Users\Administrator.000\Desktop\wiki\target\classes started by Administrator in C:\Users\Administrator.000\Desktop\wiki)
+2022-04-21 18:12:29.397 INFO  com.xjtlu.wiki.WikiApplication                    :640  [32m                  [0;39m No active profile set, falling back to 1 default profile: "default"
+2022-04-21 18:12:29.810 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m                  [0;39m Tomcat initialized with port(s): 8888 (http)
+2022-04-21 18:12:29.811 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8888"]
+2022-04-21 18:12:29.812 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
+2022-04-21 18:12:29.812 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/9.0.58]
+2022-04-21 18:12:29.832 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2022-04-21 18:12:29.832 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :290  [32m                  [0;39m Root WebApplicationContext: initialization completed in 430 ms
+2022-04-21 18:12:30.031 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :58   [32m                  [0;39m LiveReload server is running on port 35729
+2022-04-21 18:12:30.038 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8888"]
+2022-04-21 18:12:30.041 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220  [32m                  [0;39m Tomcat started on port(s): 8888 (http) with context path ''
+2022-04-21 18:12:30.045 INFO  com.xjtlu.wiki.WikiApplication                    :61   [32m                  [0;39m Started WikiApplication in 0.713 seconds (JVM running for 297.501)
+2022-04-21 18:12:30.047 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener :63   [32m                  [0;39m Condition evaluation unchanged
+2022-04-21 18:12:30.048 INFO  com.xjtlu.wiki.WikiApplication                    :18   [32m                  [0;39m 启动成功！！
+2022-04-21 18:12:30.048 INFO  com.xjtlu.wiki.WikiApplication                    :19   [32m                  [0;39m 地址: 	http://127.0.0.1:8888
+2022-04-21 18:12:31.818 INFO  com.xjtlu.wiki.WikiApplication                    :55   [32m                  [0;39m Starting WikiApplication using Java 1.8.0_101 on WIN-1J0EG9O62MI with PID 15740 (C:\Users\Administrator.000\Desktop\wiki\target\classes started by Administrator in C:\Users\Administrator.000\Desktop\wiki)
+2022-04-21 18:12:31.818 INFO  com.xjtlu.wiki.WikiApplication                    :640  [32m                  [0;39m No active profile set, falling back to 1 default profile: "default"
+2022-04-21 18:12:32.109 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m                  [0;39m Tomcat initialized with port(s): 8888 (http)
+2022-04-21 18:12:32.109 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8888"]
+2022-04-21 18:12:32.110 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
+2022-04-21 18:12:32.110 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/9.0.58]
+2022-04-21 18:12:32.132 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2022-04-21 18:12:32.132 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :290  [32m                  [0;39m Root WebApplicationContext: initialization completed in 311 ms
+2022-04-21 18:12:32.287 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :58   [32m                  [0;39m LiveReload server is running on port 35729
+2022-04-21 18:12:32.295 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8888"]
+2022-04-21 18:12:32.297 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220  [32m                  [0;39m Tomcat started on port(s): 8888 (http) with context path ''
+2022-04-21 18:12:32.302 INFO  com.xjtlu.wiki.WikiApplication                    :61   [32m                  [0;39m Started WikiApplication in 0.525 seconds (JVM running for 299.757)
+2022-04-21 18:12:32.304 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener :63   [32m                  [0;39m Condition evaluation unchanged
+2022-04-21 18:12:32.305 INFO  com.xjtlu.wiki.WikiApplication                    :18   [32m                  [0;39m 启动成功！！
+2022-04-21 18:12:32.305 INFO  com.xjtlu.wiki.WikiApplication                    :19   [32m                  [0;39m 地址: 	http://127.0.0.1:8888
+2022-04-21 18:16:17.239 INFO  com.xjtlu.wiki.WikiApplication                    :55   [32m                  [0;39m Starting WikiApplication using Java 1.8.0_101 on WIN-1J0EG9O62MI with PID 15740 (C:\Users\Administrator.000\Desktop\wiki\target\classes started by Administrator in C:\Users\Administrator.000\Desktop\wiki)
+2022-04-21 18:16:17.242 INFO  com.xjtlu.wiki.WikiApplication                    :640  [32m                  [0;39m No active profile set, falling back to 1 default profile: "default"
+2022-04-21 18:16:17.736 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m                  [0;39m Tomcat initialized with port(s): 8888 (http)
+2022-04-21 18:16:17.737 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8888"]
+2022-04-21 18:16:17.737 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
+2022-04-21 18:16:17.737 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/9.0.58]
+2022-04-21 18:16:17.759 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2022-04-21 18:16:17.759 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :290  [32m                  [0;39m Root WebApplicationContext: initialization completed in 509 ms
+2022-04-21 18:16:17.901 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :58   [32m                  [0;39m LiveReload server is running on port 35729
+2022-04-21 18:16:17.906 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8888"]
+2022-04-21 18:16:17.908 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220  [32m                  [0;39m Tomcat started on port(s): 8888 (http) with context path ''
+2022-04-21 18:16:17.912 INFO  com.xjtlu.wiki.WikiApplication                    :61   [32m                  [0;39m Started WikiApplication in 0.737 seconds (JVM running for 525.367)
+2022-04-21 18:16:17.913 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener :63   [32m                  [0;39m Condition evaluation unchanged
+2022-04-21 18:16:17.913 INFO  com.xjtlu.wiki.WikiApplication                    :18   [32m                  [0;39m 启动成功！！
+2022-04-21 18:16:17.914 INFO  com.xjtlu.wiki.WikiApplication                    :19   [32m                  [0;39m 地址: 	http://127.0.0.1:8888
+2022-04-21 18:16:19.701 INFO  com.xjtlu.wiki.WikiApplication                    :55   [32m                  [0;39m Starting WikiApplication using Java 1.8.0_101 on WIN-1J0EG9O62MI with PID 15740 (C:\Users\Administrator.000\Desktop\wiki\target\classes started by Administrator in C:\Users\Administrator.000\Desktop\wiki)
+2022-04-21 18:16:19.702 INFO  com.xjtlu.wiki.WikiApplication                    :640  [32m                  [0;39m No active profile set, falling back to 1 default profile: "default"
+2022-04-21 18:16:19.963 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m                  [0;39m Tomcat initialized with port(s): 8888 (http)
+2022-04-21 18:16:19.964 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8888"]
+2022-04-21 18:16:19.964 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
+2022-04-21 18:16:19.964 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/9.0.58]
+2022-04-21 18:16:19.984 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2022-04-21 18:16:19.985 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :290  [32m                  [0;39m Root WebApplicationContext: initialization completed in 281 ms
+2022-04-21 18:16:20.137 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :58   [32m                  [0;39m LiveReload server is running on port 35729
+2022-04-21 18:16:20.143 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8888"]
+2022-04-21 18:16:20.145 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220  [32m                  [0;39m Tomcat started on port(s): 8888 (http) with context path ''
+2022-04-21 18:16:20.148 INFO  com.xjtlu.wiki.WikiApplication                    :61   [32m                  [0;39m Started WikiApplication in 0.489 seconds (JVM running for 527.603)
+2022-04-21 18:16:20.149 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener :63   [32m                  [0;39m Condition evaluation unchanged
+2022-04-21 18:16:20.150 INFO  com.xjtlu.wiki.WikiApplication                    :18   [32m                  [0;39m 启动成功！！
+2022-04-21 18:16:20.150 INFO  com.xjtlu.wiki.WikiApplication                    :19   [32m                  [0;39m 地址: 	http://127.0.0.1:8888
+2022-04-21 18:16:21.252 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-04-21 18:16:21.253 INFO  org.springframework.web.servlet.DispatcherServlet :525  [32m                  [0;39m Initializing Servlet 'dispatcherServlet'
+2022-04-21 18:16:21.254 INFO  org.springframework.web.servlet.DispatcherServlet :547  [32m                  [0;39m Completed initialization in 1 ms
+2022-04-21 18:16:21.276 INFO  com.zaxxer.hikari.HikariDataSource                :110  [32m                  [0;39m HikariPool-2 - Starting...
+2022-04-21 18:16:21.290 INFO  com.zaxxer.hikari.HikariDataSource                :123  [32m                  [0;39m HikariPool-2 - Start completed.
+2022-04-21 18:16:21.294 INFO  com.xjtlu.wiki.service.EbookService               :48   [32m                  [0;39m 总行数：5
+2022-04-21 18:16:21.294 INFO  com.xjtlu.wiki.service.EbookService               :49   [32m                  [0;39m 总页数：1
+2022-04-21 18:16:59.430 INFO  com.xjtlu.wiki.service.EbookService               :48   [32m                  [0;39m 总行数：5
+2022-04-21 18:16:59.431 INFO  com.xjtlu.wiki.service.EbookService               :49   [32m                  [0;39m 总页数：1
+2022-04-21 18:17:02.745 INFO  com.xjtlu.wiki.service.EbookService               :48   [32m                  [0;39m 总行数：5
+2022-04-21 18:17:02.746 INFO  com.xjtlu.wiki.service.EbookService               :49   [32m                  [0;39m 总页数：1
+2022-04-21 18:18:09.023 INFO  com.xjtlu.wiki.service.EbookService               :48   [32m                  [0;39m 总行数：5
+2022-04-21 18:18:09.024 INFO  com.xjtlu.wiki.service.EbookService               :49   [32m                  [0;39m 总页数：1
+2022-04-21 18:18:57.196 INFO  com.xjtlu.wiki.service.EbookService               :48   [32m                  [0;39m 总行数：5
+2022-04-21 18:18:57.196 INFO  com.xjtlu.wiki.service.EbookService               :49   [32m                  [0;39m 总页数：1
+2022-04-21 18:18:58.217 INFO  com.xjtlu.wiki.service.EbookService               :48   [32m                  [0;39m 总行数：5
+2022-04-21 18:18:58.218 INFO  com.xjtlu.wiki.service.EbookService               :49   [32m                  [0;39m 总页数：1
+2022-04-21 18:19:08.236 INFO  com.xjtlu.wiki.service.EbookService               :48   [32m                  [0;39m 总行数：5
+2022-04-21 18:19:08.236 INFO  com.xjtlu.wiki.service.EbookService               :49   [32m                  [0;39m 总页数：1
+2022-04-21 18:19:08.599 INFO  com.xjtlu.wiki.service.EbookService               :48   [32m                  [0;39m 总行数：5
+2022-04-21 18:19:08.600 INFO  com.xjtlu.wiki.service.EbookService               :49   [32m                  [0;39m 总页数：1
+2022-04-21 18:19:09.005 INFO  com.xjtlu.wiki.service.EbookService               :48   [32m                  [0;39m 总行数：5
+2022-04-21 18:19:09.005 INFO  com.xjtlu.wiki.service.EbookService               :49   [32m                  [0;39m 总页数：1
+2022-04-21 18:19:23.093 INFO  com.xjtlu.wiki.service.EbookService               :48   [32m                  [0;39m 总行数：5
+2022-04-21 18:19:23.094 INFO  com.xjtlu.wiki.service.EbookService               :49   [32m                  [0;39m 总页数：1
+2022-04-21 18:20:50.060 INFO  com.xjtlu.wiki.service.EbookService               :48   [32m                  [0;39m 总行数：5
+2022-04-21 18:20:50.061 INFO  com.xjtlu.wiki.service.EbookService               :49   [32m                  [0;39m 总页数：1
+2022-04-21 18:20:51.709 INFO  com.xjtlu.wiki.service.EbookService               :48   [32m                  [0;39m 总行数：5
+2022-04-21 18:20:51.710 INFO  com.xjtlu.wiki.service.EbookService               :49   [32m                  [0;39m 总页数：1
+2022-04-21 18:20:52.249 INFO  com.xjtlu.wiki.service.EbookService               :48   [32m                  [0;39m 总行数：5
+2022-04-21 18:20:52.249 INFO  com.xjtlu.wiki.service.EbookService               :49   [32m                  [0;39m 总页数：1
+2022-04-21 18:21:43.181 INFO  com.xjtlu.wiki.service.EbookService               :48   [32m                  [0;39m 总行数：5
+2022-04-21 18:21:43.182 INFO  com.xjtlu.wiki.service.EbookService               :49   [32m                  [0;39m 总页数：1
+2022-04-21 18:22:09.510 INFO  com.xjtlu.wiki.service.EbookService               :48   [32m                  [0;39m 总行数：5
+2022-04-21 18:22:09.510 INFO  com.xjtlu.wiki.service.EbookService               :49   [32m                  [0;39m 总页数：1
+2022-04-21 18:22:10.578 INFO  com.xjtlu.wiki.service.EbookService               :48   [32m                  [0;39m 总行数：5
+2022-04-21 18:22:10.578 INFO  com.xjtlu.wiki.service.EbookService               :49   [32m                  [0;39m 总页数：1
+2022-04-21 18:27:50.250 INFO  com.xjtlu.wiki.service.EbookService               :48   [32m                  [0;39m 总行数：5
+2022-04-21 18:27:50.251 INFO  com.xjtlu.wiki.service.EbookService               :49   [32m                  [0;39m 总页数：1
+2022-04-21 18:28:09.191 INFO  com.xjtlu.wiki.service.EbookService               :48   [32m                  [0;39m 总行数：5
+2022-04-21 18:28:09.191 INFO  com.xjtlu.wiki.service.EbookService               :49   [32m                  [0;39m 总页数：1
+2022-04-21 18:28:58.271 INFO  com.zaxxer.hikari.HikariDataSource                :350  [32m                  [0;39m HikariPool-2 - Shutdown initiated...
+2022-04-21 18:28:58.342 INFO  com.zaxxer.hikari.HikariDataSource                :352  [32m                  [0;39m HikariPool-2 - Shutdown completed.
+2022-04-21 18:28:58.568 INFO  com.xjtlu.wiki.WikiApplication                    :55   [32m                  [0;39m Starting WikiApplication using Java 1.8.0_101 on WIN-1J0EG9O62MI with PID 15740 (C:\Users\Administrator.000\Desktop\wiki\target\classes started by Administrator in C:\Users\Administrator.000\Desktop\wiki)
+2022-04-21 18:28:58.568 INFO  com.xjtlu.wiki.WikiApplication                    :640  [32m                  [0;39m No active profile set, falling back to 1 default profile: "default"
+2022-04-21 18:28:58.869 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m                  [0;39m Tomcat initialized with port(s): 8888 (http)
+2022-04-21 18:28:58.869 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8888"]
+2022-04-21 18:28:58.869 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
+2022-04-21 18:28:58.870 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/9.0.58]
+2022-04-21 18:28:58.888 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2022-04-21 18:28:58.888 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :290  [32m                  [0;39m Root WebApplicationContext: initialization completed in 317 ms
+2022-04-21 18:28:59.026 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :58   [32m                  [0;39m LiveReload server is running on port 35729
+2022-04-21 18:28:59.032 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8888"]
+2022-04-21 18:28:59.034 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220  [32m                  [0;39m Tomcat started on port(s): 8888 (http) with context path ''
+2022-04-21 18:28:59.037 INFO  com.xjtlu.wiki.WikiApplication                    :61   [32m                  [0;39m Started WikiApplication in 0.554 seconds (JVM running for 1286.493)
+2022-04-21 18:28:59.038 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener :63   [32m                  [0;39m Condition evaluation unchanged
+2022-04-21 18:28:59.039 INFO  com.xjtlu.wiki.WikiApplication                    :18   [32m                  [0;39m 启动成功！！
+2022-04-21 18:28:59.039 INFO  com.xjtlu.wiki.WikiApplication                    :19   [32m                  [0;39m 地址: 	http://127.0.0.1:8888
+2022-04-21 18:29:02.473 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-04-21 18:29:02.475 INFO  org.springframework.web.servlet.DispatcherServlet :525  [32m                  [0;39m Initializing Servlet 'dispatcherServlet'
+2022-04-21 18:29:02.476 INFO  org.springframework.web.servlet.DispatcherServlet :547  [32m                  [0;39m Completed initialization in 1 ms
+2022-04-21 18:29:11.806 INFO  com.zaxxer.hikari.HikariDataSource                :110  [32m                  [0;39m HikariPool-3 - Starting...
+2022-04-21 18:29:11.822 INFO  com.zaxxer.hikari.HikariDataSource                :123  [32m                  [0;39m HikariPool-3 - Start completed.
+2022-04-21 18:29:11.826 INFO  com.xjtlu.wiki.service.EbookService               :48   [32m                  [0;39m 总行数：5
+2022-04-21 18:29:11.827 INFO  com.xjtlu.wiki.service.EbookService               :49   [32m                  [0;39m 总页数：1
+2022-04-21 18:29:17.646 INFO  com.zaxxer.hikari.HikariDataSource                :350  [32m                  [0;39m HikariPool-3 - Shutdown initiated...
+2022-04-21 18:29:17.654 INFO  com.zaxxer.hikari.HikariDataSource                :352  [32m                  [0;39m HikariPool-3 - Shutdown completed.
+2022-04-21 18:29:17.801 INFO  com.xjtlu.wiki.WikiApplication                    :55   [32m                  [0;39m Starting WikiApplication using Java 1.8.0_101 on WIN-1J0EG9O62MI with PID 15740 (C:\Users\Administrator.000\Desktop\wiki\target\classes started by Administrator in C:\Users\Administrator.000\Desktop\wiki)
+2022-04-21 18:29:17.801 INFO  com.xjtlu.wiki.WikiApplication                    :640  [32m                  [0;39m No active profile set, falling back to 1 default profile: "default"
+2022-04-21 18:29:18.346 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m                  [0;39m Tomcat initialized with port(s): 8888 (http)
+2022-04-21 18:29:18.347 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8888"]
+2022-04-21 18:29:18.347 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
+2022-04-21 18:29:18.348 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/9.0.58]
+2022-04-21 18:29:18.371 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2022-04-21 18:29:18.372 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :290  [32m                  [0;39m Root WebApplicationContext: initialization completed in 568 ms
+2022-04-21 18:29:18.565 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :58   [32m                  [0;39m LiveReload server is running on port 35729
+2022-04-21 18:29:18.574 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8888"]
+2022-04-21 18:29:18.577 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220  [32m                  [0;39m Tomcat started on port(s): 8888 (http) with context path ''
+2022-04-21 18:29:18.583 INFO  com.xjtlu.wiki.WikiApplication                    :61   [32m                  [0;39m Started WikiApplication in 0.832 seconds (JVM running for 1306.038)
+2022-04-21 18:29:18.584 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener :63   [32m                  [0;39m Condition evaluation unchanged
+2022-04-21 18:29:18.586 INFO  com.xjtlu.wiki.WikiApplication                    :18   [32m                  [0;39m 启动成功！！
+2022-04-21 18:29:18.586 INFO  com.xjtlu.wiki.WikiApplication                    :19   [32m                  [0;39m 地址: 	http://127.0.0.1:8888
+2022-04-21 18:30:21.076 INFO  com.xjtlu.wiki.WikiApplication                    :55   [32m                  [0;39m Starting WikiApplication using Java 1.8.0_101 on WIN-1J0EG9O62MI with PID 15740 (C:\Users\Administrator.000\Desktop\wiki\target\classes started by Administrator in C:\Users\Administrator.000\Desktop\wiki)
+2022-04-21 18:30:21.076 INFO  com.xjtlu.wiki.WikiApplication                    :640  [32m                  [0;39m No active profile set, falling back to 1 default profile: "default"
+2022-04-21 18:30:21.480 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m                  [0;39m Tomcat initialized with port(s): 8888 (http)
+2022-04-21 18:30:21.481 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8888"]
+2022-04-21 18:30:21.481 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
+2022-04-21 18:30:21.481 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/9.0.58]
+2022-04-21 18:30:21.519 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2022-04-21 18:30:21.519 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :290  [32m                  [0;39m Root WebApplicationContext: initialization completed in 439 ms
+2022-04-21 18:30:21.725 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :58   [32m                  [0;39m LiveReload server is running on port 35729
+2022-04-21 18:30:21.734 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8888"]
+2022-04-21 18:30:21.737 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220  [32m                  [0;39m Tomcat started on port(s): 8888 (http) with context path ''
+2022-04-21 18:30:21.741 INFO  com.xjtlu.wiki.WikiApplication                    :61   [32m                  [0;39m Started WikiApplication in 0.715 seconds (JVM running for 1369.196)
+2022-04-21 18:30:21.742 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener :63   [32m                  [0;39m Condition evaluation unchanged
+2022-04-21 18:30:21.743 INFO  com.xjtlu.wiki.WikiApplication                    :18   [32m                  [0;39m 启动成功！！
+2022-04-21 18:30:21.744 INFO  com.xjtlu.wiki.WikiApplication                    :19   [32m                  [0;39m 地址: 	http://127.0.0.1:8888
+2022-04-21 18:31:55.433 INFO  com.xjtlu.wiki.WikiApplication                    :55   [32m                  [0;39m Starting WikiApplication using Java 1.8.0_101 on WIN-1J0EG9O62MI with PID 15740 (C:\Users\Administrator.000\Desktop\wiki\target\classes started by Administrator in C:\Users\Administrator.000\Desktop\wiki)
+2022-04-21 18:31:55.434 INFO  com.xjtlu.wiki.WikiApplication                    :640  [32m                  [0;39m No active profile set, falling back to 1 default profile: "default"
+2022-04-21 18:31:55.914 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m                  [0;39m Tomcat initialized with port(s): 8888 (http)
+2022-04-21 18:31:55.914 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8888"]
+2022-04-21 18:31:55.915 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
+2022-04-21 18:31:55.915 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/9.0.58]
+2022-04-21 18:31:55.942 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2022-04-21 18:31:55.942 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :290  [32m                  [0;39m Root WebApplicationContext: initialization completed in 505 ms
+2022-04-21 18:31:56.137 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :58   [32m                  [0;39m LiveReload server is running on port 35729
+2022-04-21 18:31:56.144 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8888"]
+2022-04-21 18:31:56.147 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220  [32m                  [0;39m Tomcat started on port(s): 8888 (http) with context path ''
+2022-04-21 18:31:56.151 INFO  com.xjtlu.wiki.WikiApplication                    :61   [32m                  [0;39m Started WikiApplication in 0.771 seconds (JVM running for 1463.607)
+2022-04-21 18:31:56.153 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener :63   [32m                  [0;39m Condition evaluation unchanged
+2022-04-21 18:31:56.154 INFO  com.xjtlu.wiki.WikiApplication                    :18   [32m                  [0;39m 启动成功！！
+2022-04-21 18:31:56.154 INFO  com.xjtlu.wiki.WikiApplication                    :19   [32m                  [0;39m 地址: 	http://127.0.0.1:8888
+2022-04-21 18:32:01.264 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-04-21 18:32:01.265 INFO  org.springframework.web.servlet.DispatcherServlet :525  [32m                  [0;39m Initializing Servlet 'dispatcherServlet'
+2022-04-21 18:32:01.266 INFO  org.springframework.web.servlet.DispatcherServlet :547  [32m                  [0;39m Completed initialization in 0 ms
+2022-04-21 18:32:01.282 INFO  com.zaxxer.hikari.HikariDataSource                :110  [32m                  [0;39m HikariPool-4 - Starting...
+2022-04-21 18:32:01.294 INFO  com.zaxxer.hikari.HikariDataSource                :123  [32m                  [0;39m HikariPool-4 - Start completed.
+2022-04-21 18:32:01.298 INFO  com.xjtlu.wiki.service.EbookService               :48   [32m                  [0;39m 总行数：5
+2022-04-21 18:32:01.298 INFO  com.xjtlu.wiki.service.EbookService               :49   [32m                  [0;39m 总页数：1
+2022-04-21 18:32:02.046 INFO  com.xjtlu.wiki.service.CategoryService            :41   [32m                  [0;39m 总行数：15
+2022-04-21 18:32:02.046 INFO  com.xjtlu.wiki.service.CategoryService            :42   [32m                  [0;39m 总页数：2
+2022-04-21 18:34:14.899 INFO  com.zaxxer.hikari.HikariDataSource                :350  [32m                  [0;39m HikariPool-4 - Shutdown initiated...
+2022-04-21 18:34:14.905 INFO  com.zaxxer.hikari.HikariDataSource                :352  [32m                  [0;39m HikariPool-4 - Shutdown completed.
+2022-04-21 18:34:15.041 INFO  com.xjtlu.wiki.WikiApplication                    :55   [32m                  [0;39m Starting WikiApplication using Java 1.8.0_101 on WIN-1J0EG9O62MI with PID 15740 (C:\Users\Administrator.000\Desktop\wiki\target\classes started by Administrator in C:\Users\Administrator.000\Desktop\wiki)
+2022-04-21 18:34:15.041 INFO  com.xjtlu.wiki.WikiApplication                    :640  [32m                  [0;39m No active profile set, falling back to 1 default profile: "default"
+2022-04-21 18:34:15.366 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m                  [0;39m Tomcat initialized with port(s): 8888 (http)
+2022-04-21 18:34:15.366 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8888"]
+2022-04-21 18:34:15.366 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
+2022-04-21 18:34:15.366 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/9.0.58]
+2022-04-21 18:34:15.387 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2022-04-21 18:34:15.387 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :290  [32m                  [0;39m Root WebApplicationContext: initialization completed in 343 ms
+2022-04-21 18:34:15.535 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :58   [32m                  [0;39m LiveReload server is running on port 35729
+2022-04-21 18:34:15.541 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8888"]
+2022-04-21 18:34:15.544 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220  [32m                  [0;39m Tomcat started on port(s): 8888 (http) with context path ''
+2022-04-21 18:34:15.548 INFO  com.xjtlu.wiki.WikiApplication                    :61   [32m                  [0;39m Started WikiApplication in 0.553 seconds (JVM running for 1603.004)
+2022-04-21 18:34:15.549 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener :63   [32m                  [0;39m Condition evaluation unchanged
+2022-04-21 18:34:15.550 INFO  com.xjtlu.wiki.WikiApplication                    :18   [32m                  [0;39m 启动成功！！
+2022-04-21 18:34:15.550 INFO  com.xjtlu.wiki.WikiApplication                    :19   [32m                  [0;39m 地址: 	http://127.0.0.1:8888
+2022-04-21 18:34:19.617 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-04-21 18:34:19.618 INFO  org.springframework.web.servlet.DispatcherServlet :525  [32m                  [0;39m Initializing Servlet 'dispatcherServlet'
+2022-04-21 18:34:19.619 INFO  org.springframework.web.servlet.DispatcherServlet :547  [32m                  [0;39m Completed initialization in 0 ms
+2022-04-21 18:34:19.626 INFO  com.zaxxer.hikari.HikariDataSource                :110  [32m                  [0;39m HikariPool-5 - Starting...
+2022-04-21 18:34:19.639 INFO  com.zaxxer.hikari.HikariDataSource                :123  [32m                  [0;39m HikariPool-5 - Start completed.
+2022-04-21 18:35:26.447 INFO  com.xjtlu.wiki.service.EbookService               :48   [32m                  [0;39m 总行数：5
+2022-04-21 18:35:26.448 INFO  com.xjtlu.wiki.service.EbookService               :49   [32m                  [0;39m 总页数：1
+2022-04-21 18:35:49.097 INFO  com.xjtlu.wiki.service.EbookService               :48   [32m                  [0;39m 总行数：5
+2022-04-21 18:35:49.098 INFO  com.xjtlu.wiki.service.EbookService               :49   [32m                  [0;39m 总页数：1
+2022-04-21 18:38:46.727 INFO  com.xjtlu.wiki.service.EbookService               :48   [32m                  [0;39m 总行数：5
+2022-04-21 18:38:46.727 INFO  com.xjtlu.wiki.service.EbookService               :49   [32m                  [0;39m 总页数：1
+2022-04-21 18:39:59.501 INFO  com.xjtlu.wiki.service.EbookService               :48   [32m                  [0;39m 总行数：5
+2022-04-21 18:39:59.502 INFO  com.xjtlu.wiki.service.EbookService               :49   [32m                  [0;39m 总页数：1
+2022-04-21 18:40:47.988 INFO  com.xjtlu.wiki.service.EbookService               :48   [32m                  [0;39m 总行数：5
+2022-04-21 18:40:47.989 INFO  com.xjtlu.wiki.service.EbookService               :49   [32m                  [0;39m 总页数：1
+2022-04-21 18:40:50.300 INFO  com.xjtlu.wiki.service.EbookService               :48   [32m                  [0;39m 总行数：5
+2022-04-21 18:40:50.301 INFO  com.xjtlu.wiki.service.EbookService               :49   [32m                  [0;39m 总页数：1
+2022-04-21 18:40:53.087 INFO  com.xjtlu.wiki.service.EbookService               :48   [32m                  [0;39m 总行数：5
+2022-04-21 18:40:53.088 INFO  com.xjtlu.wiki.service.EbookService               :49   [32m                  [0;39m 总页数：1
+2022-04-21 18:41:44.263 INFO  com.xjtlu.wiki.service.EbookService               :48   [32m                  [0;39m 总行数：5
+2022-04-21 18:41:44.263 INFO  com.xjtlu.wiki.service.EbookService               :49   [32m                  [0;39m 总页数：1
+2022-04-21 18:48:14.802 INFO  com.xjtlu.wiki.service.EbookService               :48   [32m                  [0;39m 总行数：5
+2022-04-21 18:48:14.803 INFO  com.xjtlu.wiki.service.EbookService               :49   [32m                  [0;39m 总页数：1
